@@ -1,0 +1,10 @@
+[PASS] SPEC����������������
+[PASS] SPEC display_d��������
+[PASS] SPE��������������������
+[PASS] SPE��������������������
+[PASS] SPE��������������������
+[PASS] LIS��������������������
+[PASS] LI������������������������
+[PASS] LIS��������������������
+===== 全部用例通过 =====
+sim/tb_visual_pages.v:126: $finish called at 1371000 (1ps)

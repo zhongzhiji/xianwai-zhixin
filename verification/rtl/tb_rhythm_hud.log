@@ -1,0 +1,17 @@
+[PASS] ��弹窗区不是判定面板色
+[PASS] �������������� display_d��������
+[PASS] PERFECT������������������������
+[PASS] RFECT：弹窗上边框 = 金色
+[PASS] ��板命中闪光边框 = 金色
+  [DBG ] HUD strip off=010451 on=007209
+[PASS] ��绘制（与关闭时不同）
+[PASS] GOOD��������������� ��������
+[PASS] MISS��������������� ��������
+[PASS] hold=0����������������
+[PASS] hold������������������������
+[PASS] hold=0 ������������������������
+[PASS] x>=8������ display_d��������
+
+===== 全部用例通过 =====
+
+sim/tb_rhythm_hud.v:181: $finish called at 2091000 (1ps)

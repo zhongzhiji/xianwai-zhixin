@@ -1,0 +1,16 @@
+{
+  "passed_count": 9,
+  "passed": [
+    "authenticated assets load; initial status is honest preview",
+    "real keyboard hit scores once; unplayed notes miss",
+    "automatic phrasing renders; no human score or hardware input fabrication",
+    "32 browser voices created and released",
+    "disconnect returns to preview at default JDY-31 baud",
+    "pointer hold survives lease and releases correctly",
+    "gateway releases held note when browser goes offline",
+    "score import blocks conflicting game input",
+    "phone layout has no horizontal overflow"
+  ],
+  "browser_errors": [],
+  "physical_hardware": false
+}

@@ -1,0 +1,23 @@
+=== tb_latency: note_on -> 第一个非零 PCM 样本 ===
+  [TRIAL  0] latency=13544 cycles (270.88 us), 13 sample beats, first pcm=1
+  [TRIAL  1] latency=13477 cycles (269.54 us), 13 sample beats, first pcm=1
+  [TRIAL  2] latency=13410 cycles (268.20 us), 13 sample beats, first pcm=1
+  [TRIAL  3] latency=13343 cycles (266.86 us), 13 sample beats, first pcm=1
+  [TRIAL  4] latency=13276 cycles (265.52 us), 13 sample beats, first pcm=1
+  [TRIAL  5] latency=13209 cycles (264.18 us), 13 sample beats, first pcm=1
+  [TRIAL  6] latency=13142 cycles (262.84 us), 13 sample beats, first pcm=1
+  [TRIAL  7] latency=13075 cycles (261.50 us), 13 sample beats, first pcm=1
+  [TRIAL  8] latency=13008 cycles (260.16 us), 13 sample beats, first pcm=1
+  [TRIAL  9] latency=12941 cycles (258.82 us), 13 sample beats, first pcm=1
+  [TRIAL 10] latency=12874 cycles (257.48 us), 13 sample beats, first pcm=1
+  [TRIAL 11] latency=12807 cycles (256.14 us), 13 sample beats, first pcm=1
+  [TRIAL 12] latency=12740 cycles (254.80 us), 13 sample beats, first pcm=1
+  [TRIAL 13] latency=12673 cycles (253.46 us), 13 sample beats, first pcm=1
+  [TRIAL 14] latency=12606 cycles (252.12 us), 13 sample beats, first pcm=1
+  [TRIAL 15] latency=12539 cycles (250.78 us), 13 sample beats, first pcm=1
+  ---- 统计：min=12539 max=13544 抖动=1005 拍 (20.10 us) 平均=13041
+  [OK  ] ��限 < 1 ms（对 5 ms 红线有 5 倍余量）
+  [OK  ] ��������������� < 1 ������������������20.8 u����
+  [OK  ] 16 ������������������������������������
+PASS=3 FAIL=0
+sim/tb_latency.v:107: $finish called at 4339210000 (1ps)

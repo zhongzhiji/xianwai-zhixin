@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>弦外之芯 · 演奏工作台</title>
+<style>
+:root{color-scheme:dark;--bg:#101c30;--ink:#eff6ff;--muted:#9cb0c9;--a:#58dfce}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Microsoft YaHei",sans-serif}main{max-width:780px;margin:auto;padding:32px 22px 70px}header{border-bottom:1px solid #334158;padding-bottom:22px}small{color:var(--a);letter-spacing:.12em}h1{font-size:36px;margin:10px 0 4px;letter-spacing:.06em}p{color:var(--muted);margin:8px 0}.mode{margin:20px 0;padding:12px 16px;background:#213249;border-left:3px solid #f5be70;font-size:14px}h2{font-size:22px;margin:32px 0 14px}label{color:var(--muted);display:block}select,button,input{font:inherit;border:1px solid #46556e;border-radius:8px;padding:12px;background:#1a2a42;color:var(--ink)}select{width:100%;margin:8px 0 14px}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.5}.primary{background:var(--a);color:#0b2832;border:0;font-weight:bold;width:100%}.row{display:flex;gap:12px;align-items:center}.row input{flex:1;min-width:0}input[type=range]{padding:0;accent-color:var(--a)}#keys{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin:16px 0}#keys button{min-height:124px;background:#eaf0f8;color:#142a44;padding:8px 2px;user-select:none;touch-action:none;font-weight:bold;box-shadow:0 5px #73849c}#keys button.on{background:var(--a);transform:translateY(3px);box-shadow:0 2px #3a9488}pre{white-space:pre-wrap;word-break:break-all;font:12px/1.6 Consolas,monospace;color:#b0c4da;background:#0c1525;padding:16px;border-radius:8px;max-height:180px;overflow:auto}.subtle{font-size:13px}#status{min-height:52px;color:#e6effb}details{margin-top:22px}summary{color:var(--muted);cursor:pointer}a{color:var(--a)}footer{margin-top:34px;border-top:1px solid #334158;padding-top:20px;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<header><div><small>STRING BEYOND · FPGA MUSIC</small><h1>弦外之芯</h1><p>从指尖表达，到实时声音</p></div><button id="recording">拍摄视图</button></header>
+<div class="mode" id="mode" role="status">正在确认网关连接…</div>
+<div class="console-grid"><section>
+<div class="panel"><div class="game-head"><div><div class="eyebrow">Rhythm studio / 音游演奏</div><h2>让每一次触碰，都在节拍上</h2></div><span class="badge" id="session-mode">等待开始</span></div>
+<div class="game-tools"><button class="primary" id="game-start">开始真人练习</button><button id="game-demo">自然演奏演示</button><button id="game-stop">停止 / 重来</button><button id="local-audio">浏览器试听：开</button></div>
+<div class="metrics"><div class="metric"><span>演奏得分</span><strong id="game-score">0</strong></div><div class="metric"><span>当前连击</span><strong id="game-combo">0</strong></div><div class="metric"><span>准确命中</span><strong id="game-accuracy">—</strong></div><div class="metric"><span>乐曲进度</span><strong id="game-time">0:00</strong></div></div>
+<div class="stage"><canvas id="game-canvas" aria-label="八轨下落音符，使用下方琴键或电脑 ASDFJKL 分号键演奏"></canvas><div id="game-feedback">跟随光轨 · 按下琴键<small>ASDF JKL; / 鼠标 / 多点触摸</small></div></div>
+<div class="lanes" id="game-keys"></div><div class="timeline"><i id="game-progress"></i></div>
+<p class="game-note" id="game-hint">按“开始真人练习”后有 3 秒准备时间。音符抵达亮线时按键；±55 ms 为 PERFECT，±145 ms 为 GOOD。这里的判定来自网页输入。</p>
+<div id="game-summary" hidden></div></div>
+<div class="panel" style="margin-top:20px"><div class="eyebrow">Sound laboratory / 声音表达</div><h2>力度 · 滑音 · 颤音 · 多声部</h2><p class="source-label">本区为浏览器实时合成试听。参数不下发 FPGA；板上效果使用演示第 2、13–18 段验证。</p>
+<div class="sound-grid"><div><label for="timbre">试听音色</label><select id="timbre"><option value="keys">柔和琴音</option><option value="pluck">拨弦</option><option value="wind">管乐</option><option value="synth">合成器</option></select><div class="control"><label for="velocity">演奏力度</label><input id="velocity" type="range" min="20" max="127" value="96"><output id="velocity-value">96</output></div><div class="control"><label for="glide">滑音时间</label><input id="glide" type="range" min="0" max="500" step="10" value="0"><output id="glide-value">0 ms</output></div><div class="control"><label for="vibrato">颤音深度</label><input id="vibrato" type="range" min="0" max="45" value="0"><output id="vibrato-value">0 ct</output></div></div>
+<div><label>独立振荡器试听 · 持续 3 秒</label><div class="voice-buttons"><button data-voices="4">4 声部</button><button data-voices="8">8 声部</button><button data-voices="16">16 声部</button><button data-voices="32">32 声部</button></div><canvas class="scope" id="audio-scope" aria-label="浏览器输出波形"></canvas><p class="subtle" id="voice-info">等待试听；各声部具有独立振荡器和包络。</p></div></div></div>
+<div class="rules"><div><b>基础要求 · FPGA 合成</b><p>赛题要求多维输入、实时 HDL 合成、至少 4 声部。网页演奏用于辅助展示，板上音频需单独实录。</p></div><div><b>拓展展示 · 32 声部</b><p>现有 FPGA 演示分段播放 4 / 8 / 16 / 32 声部，并展示滑音、颤音及效果器。</p></div><div><b>创新方向 · 演奏与教学</b><p>曲谱引导、可视化反馈和按键判定共用音符信息。网页自动演示保留自然力度、时差和释音。</p></div></div>
+</section><aside class="side"><div class="panel"><div class="eyebrow">Connection / 链路控制</div><h2>蓝牙与串口</h2><p class="link-status">JDY-31 为经典蓝牙 SPP。先在 Windows 配对，再选它的出站 COM 口。</p><div class="transport"><select id="port" aria-label="电脑串口"><option value="">正在枚举…</option></select><button id="ports-refresh">刷新</button></div><label for="baud">模块 UART 波特率（须与 FPGA 相同）</label><select id="baud"><option value="9600">9600 · 新 JDY-31 / 新版固件</option><option value="115200">115200 · 旧版固件</option></select><div class="connect-actions"><button id="connect">连接所选串口</button><button id="disconnect">断开 / 离线演示</button></div><p id="connection-detail" role="status">不连接硬件也可运行音游和浏览器试听。</p>
+<h2>曲谱导入</h2><label for="song">选择示范曲谱</label><select id="song"><option value="bee">小蜜蜂 · 24 个事件</option><option value="joy">欢乐颂 · 15 个事件</option><option value="scale">C 大调音阶 · 8 个事件</option></select><div class="row"><label for="bpm">BPM</label><input type="range" id="bpm" min="60" max="200" value="112"><b id="bpmValue">112</b></div><p>曲谱传输音高与时值，不发送录音。</p><button class="primary" id="send">生成并下发曲谱</button><p id="status" role="status">等待选择曲谱。</p>
+<h2>板上演奏键盘</h2><p>FPGA 第 26 段按 S1 停留后使用。当前蓝牙演奏通道为单音；网页八轨与 32 声部试听不能作为蓝牙复音实测。</p><div id="keys"></div><button id="panic">全部释音</button><details><summary>自定义曲谱与传输记录</summary><p>JSON：bpm，events [{note:60,length:4}]；0 为休止；最多 255 事件。自定义文件用于板上导入，音游使用上方内置选曲。</p><input type="file" accept=".json,application/json" id="file"><pre id="hex">尚无协议数据</pre></details></div></aside></div>
+<footer>拍摄说明：自动演示显示“自动演奏”，不累计真人得分。声音实验是浏览器合成；网页按键经网关可发送 MIDI 指令，当前接收口没有 FPGA 回传确认。串口打开不等于蓝牙链路或实物交互已验证。真实视频请同时拍到开发板、输入动作和屏幕响应。</footer>
+</main><script>
+const token=new URLSearchParams(location.search).get('token')||'';
+const $=s=>document.querySelector(s);let busy=false,pendingNotes=0,heartbeating=false;
+const client=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
+const held=new Set();
+const songs={bee:[67,64,64,65,62,62,60,62,64,65,67,67,67,67,64,64,65,62,62,60,64,67,67,60],joy:[64,64,65,67,67,65,64,62,60,60,62,64,64,62,62],scale:[60,62,64,65,67,69,71,72]};
+async function api(path,data,timeout=3500){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeout);
+ try{const r=await fetch(path,{method:data?'POST':'GET',signal:controller.signal,headers:{'X-Demo-Token':token,'Content-Type':'application/json'},body:data?JSON.stringify({...data,client}):undefined});const j=await r.json();if(!r.ok)throw Error(j.error||'请求失败');return j}
+ catch(e){if(e.name==='AbortError')throw Error('网关响应超时，请检查网络；电脑将尝试自动释音');throw e}
+ finally{clearTimeout(timer)}
+}
+let writeQueue=Promise.resolve();
+function command(path,data){const result=writeQueue.then(()=>api(path,data));writeQueue=result.catch(()=>{});return result}
+function connection(j){$('#mode').textContent=j.serial_error?'串口异常 · 释音未确认，请检查连接或复位 FPGA':j.mode==='uart'?'串口已打开 '+j.port+' / '+j.baud+' · FPGA 接收未确认':'协议预演 · 未连接 FPGA';$('#mode').style.borderLeftColor=j.serial_error?'#ef887d':'#f5be70'}
+function display(j){connection(j);$('#status').textContent=j.message;$('#hex').textContent=j.hex||$('#hex').textContent}
+function clearLocalKeys(){window.stopPreviewNotes?.();held.clear();document.querySelectorAll('#keys .on').forEach(e=>e.classList.remove('on'))}
+$('#bpm').oninput=()=>$('#bpmValue').textContent=$('#bpm').value;
+async function sendScore(data){if(busy)return;busy=true;$('#send').disabled=true;clearLocalKeys();try{display(await command('/api/score',data))}catch(e){$('#status').textContent=e.message}finally{busy=false;$('#send').disabled=false}}
+$('#send').onclick=()=>sendScore({bpm:+$('#bpm').value,events:songs[$('#song').value].map(note=>({note,length:4}))});
+$('#file').onchange=async e=>{if(!e.target.files.length)return;try{await sendScore(JSON.parse(await e.target.files[0].text()))}catch(e){$('#status').textContent='文件格式错误：'+e.message}};
+async function note(n,v){pendingNotes++;try{display(await command('/api/note',{note:n,velocity:v}))}catch(e){clearLocalKeys();$('#status').textContent=e.message}finally{pendingNotes--}}
+[60,62,64,65,67,69,71,72].forEach((n,i)=>{const b=document.createElement('button');b.textContent=['C','D','E','F','G','A','B','C′'][i];b.setAttribute('aria-label','音符 '+n);b.onpointerdown=e=>{e.preventDefault();if(busy||held.has(n))return;b.setPointerCapture(e.pointerId);held.add(n);b.classList.add('on');window.previewOn?.(n,100);note(n,100)};const release=()=>{if(held.delete(n)){b.classList.remove('on');window.previewOff?.(n);note(n,0)}};b.onpointerup=release;b.onpointercancel=release;b.onlostpointercapture=release;$('#keys').append(b)});
+$('#panic').onclick=()=>{clearLocalKeys();command('/api/panic',{}).then(display).catch(e=>$('#status').textContent=e.message)};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)$('#panic').click()});
+window.addEventListener('pagehide',()=>$('#panic').click());
+setInterval(async()=>{
+ if(!held.size||pendingNotes||busy||heartbeating||document.hidden)return;
+ heartbeating=true;
+ try{const j=await api('/api/heartbeat',{},1500);connection(j);if(!j.lease_active){clearLocalKeys();$('#status').textContent=j.serial_error?j.message:'演奏控制已释放，请重新按键'}}
+ catch(e){clearLocalKeys();$('#mode').textContent='演奏连接中断';$('#status').textContent=e.message}
+ finally{heartbeating=false}
+},400);
+async function refresh(){try{connection(await api('/api/status'))}catch(e){$('#mode').textContent='网关不可达';$('#status').textContent=e.message}}
+refresh();setInterval(()=>{if(!held.size&&!busy&&!document.hidden)refresh()},3000);
+</script><script>
+(async()=>{const css=document.createElement('link');css.rel='stylesheet';css.href='/game.css?token='+encodeURIComponent(token);document.head.append(css);for(const f of ['rhythm-core.js','game.js'])await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='/'+f+'?token='+encodeURIComponent(token);s.onload=resolve;s.onerror=reject;document.body.append(s)})})().catch(()=>document.querySelector('#status').textContent='音游资源加载失败，请刷新页面');
+</script></body></html>

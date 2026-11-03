@@ -1,0 +1,1067 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 78,
+    "sha256": "22b8c88bd42a86e15449c8810dd7369799b65d712770d436aefdd0a8b5c6d525"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 154,
+    "sha256": "190a068b6ab8f98668e2972fde2d5b3e946e47e7185cd01f82aa45f045a5f98c"
+  },
+  {
+    "path": "docs/bluetooth.md",
+    "bytes": 8604,
+    "sha256": "06f6fd8144b1e97761cba9c4ee2e080dd14f91c40d8b62bb7ae4eee8bf12b9d2"
+  },
+  {
+    "path": "docs/build-status.md",
+    "bytes": 818,
+    "sha256": "59f0a6f4e8c3ab1213b6ea5c506c92e1fbbaa03520fd00120539ea8f1cc3cbfa"
+  },
+  {
+    "path": "docs/requirements.md",
+    "bytes": 1538,
+    "sha256": "dbfbc8e5edf807dce50b6ee4b2a87ed0831d1d9de5b8b0871972eed120748b43"
+  },
+  {
+    "path": "docs/system.svg",
+    "bytes": 3429,
+    "sha256": "ee501a2eec42869ea8393779cd7b174bffb394f9ae38ca72873779bd754f3088"
+  },
+  {
+    "path": "fpga/assets/cyberpunk_transcription_notes.json",
+    "bytes": 3798,
+    "sha256": "5290d932a353de3f31fa0c3bd430cf1e14f77db079f61968447182e5d09f7fa8"
+  },
+  {
+    "path": "fpga/assets/future_style.json",
+    "bytes": 48525,
+    "sha256": "75e53bb7d619d1ef3868a753e994f83f93533b72f9d135d7cb52d412a4da0a2d"
+  },
+  {
+    "path": "fpga/assets/sd/README.md",
+    "bytes": 288,
+    "sha256": "060146b2a858da05e4db5eb5cb76a6669f3eb0742fb13c8bb8245a6769d2871a"
+  },
+  {
+    "path": "fpga/assets/songs/birthday.json",
+    "bytes": 1578,
+    "sha256": "a0f83477575e015e3e10101ea156726808cfa3ce94a741fb282450c206471c64"
+  },
+  {
+    "path": "fpga/assets/songs/future_style_16key.json",
+    "bytes": 44909,
+    "sha256": "2de988e43bc6664b18e38826dfe5a528efffa5204068ce5b624c54bdceb5e2bd"
+  },
+  {
+    "path": "fpga/assets/songs/jingle_bells.json",
+    "bytes": 2958,
+    "sha256": "251ec4523d584871af9f0fdc89e4cb481db3067537ef636457619d05c025b5e0"
+  },
+  {
+    "path": "fpga/assets/songs/little_bee.json",
+    "bytes": 1523,
+    "sha256": "9e4c9345efde09301869238ef4a2ce1d6e47a2172a409361e8ec55abef756876"
+  },
+  {
+    "path": "fpga/assets/songs/mario_theme.json",
+    "bytes": 1048,
+    "sha256": "e9f696635822c8d55fe690041091049815616fe2745d3e41ecad12c070cd34ac"
+  },
+  {
+    "path": "fpga/assets/songs/ode_to_joy.json",
+    "bytes": 1163,
+    "sha256": "276d7ce3d04a229846891fbcffbd1ca20cb4e517ceabffe34cd0c96edcf61416"
+  },
+  {
+    "path": "fpga/assets/songs/row_boat.json",
+    "bytes": 1670,
+    "sha256": "de45aa903c0d2ce9fd163c5ad18e2ac4440f151812ca8457bfe585810988b831"
+  },
+  {
+    "path": "fpga/assets/songs/two_tigers.json",
+    "bytes": 1080,
+    "sha256": "40bf36e98f88b14fa9842af7acdf51db86e5cc972071f2b4739bbe100125de01"
+  },
+  {
+    "path": "fpga/assets/stay_at_your_house.json",
+    "bytes": 17494,
+    "sha256": "597a6353e33fdd4013fa9c918852e9f8e454cc1c00adae2bd2b34ec1561c3464"
+  },
+  {
+    "path": "fpga/assets/transcription_notes.json",
+    "bytes": 5050,
+    "sha256": "86309fe624db7b64704690ac4c49429f3e0f2d24e018de08e00da6cce15c092e"
+  },
+  {
+    "path": "fpga/audio/rom/bend_lut.mem",
+    "bytes": 768,
+    "sha256": "6bc00dd52d8a44f6cfe287b45ebb9ea6cf53cec865335b4287bf4f73fcd0bb97"
+  },
+  {
+    "path": "fpga/audio/rom/midi_fw.mem",
+    "bytes": 1280,
+    "sha256": "025dc926a55e048d3c03da49e1f0ab7c2315f2e33c53ff7c8c865d0e1546de4c"
+  },
+  {
+    "path": "fpga/audio/rom/sine_lfo_256.mem",
+    "bytes": 1280,
+    "sha256": "cbc724a9c2e33f9b695567218a45acc833434cac7ba4f83152365a1ac7ec94eb"
+  },
+  {
+    "path": "fpga/audio/rom/wavetable_showcase.mem",
+    "bytes": 9216,
+    "sha256": "554266bbc00a193e8cfabd62afaf67ec094d0d181b3cc234d5f391fd57141572"
+  },
+  {
+    "path": "fpga/audio/rom/wavetable_v4.mem",
+    "bytes": 36864,
+    "sha256": "b3ae32aca4a686c8f738dc53f3ffa8e4dcb962f36cd94579f9bc33622695c7ad"
+  },
+  {
+    "path": "fpga/audio/src/audio_master_volume.v",
+    "bytes": 4862,
+    "sha256": "dd32600701cdd6a287a72de8ced8f61085d58dc3994215ec3b82687ccfae33d5"
+  },
+  {
+    "path": "fpga/audio/src/audio_output_filter.v",
+    "bytes": 1420,
+    "sha256": "025f38b2faf779c52b093a991baa64930fb6bcfc0f67697be6eb9c36aa28642d"
+  },
+  {
+    "path": "fpga/audio/src/chromatic_audition.v",
+    "bytes": 5159,
+    "sha256": "20c05e7c1c262889486e60322303aad2c3128714931a8232502e6630398abac8"
+  },
+  {
+    "path": "fpga/audio/src/clk_gen.v",
+    "bytes": 3252,
+    "sha256": "aee9fb9307a2ad11c1d0ebd4df3cfdac9c6f89fa33594e02fed8e43b027d4076"
+  },
+  {
+    "path": "fpga/audio/src/freq_map.v",
+    "bytes": 4173,
+    "sha256": "ba3b564f276ddde87adf6af4a1c0cf0ec3d97249fd1e4915c084e143f9767684"
+  },
+  {
+    "path": "fpga/audio/src/fsr16_audio_wrapper.v",
+    "bytes": 4696,
+    "sha256": "61c62803080023109ab7642e6e5d28bb01b4da389558239cb691cfcaa0e54917"
+  },
+  {
+    "path": "fpga/audio/src/fsr16_engine.v",
+    "bytes": 10763,
+    "sha256": "1ccd0a5227ccf35c8f0f998f9f3746824704a123520ef627b8e34c3b2ecab400"
+  },
+  {
+    "path": "fpga/audio/src/fsr16_uart_engine.v",
+    "bytes": 3305,
+    "sha256": "58077f3d4b288ad44e079772137af1dea5be385551c0aa81c9b92f62399788c2"
+  },
+  {
+    "path": "fpga/audio/src/fsr32_engine.v",
+    "bytes": 22679,
+    "sha256": "ae03be7986cd84ddaaf922389bef2199290782e37621f24156f3c78c3b111028"
+  },
+  {
+    "path": "fpga/audio/src/fsr_gate.v",
+    "bytes": 9456,
+    "sha256": "2a900a02ba9f8bcd87986c19c5323404a60ddaadfdc33438578121e2fd193ff5"
+  },
+  {
+    "path": "fpga/audio/src/fx_rack.v",
+    "bytes": 17896,
+    "sha256": "c36b76300b01e0deacb25e5fec38c4dc583831aab569a0aeb137f28f604cd0fa"
+  },
+  {
+    "path": "fpga/audio/src/i2s_tx.v",
+    "bytes": 7200,
+    "sha256": "9301f9d5747e0e3952e3afbb5cc9fd8a3bc4d297d679fc20615981123933d27f"
+  },
+  {
+    "path": "fpga/audio/src/note_freq.vh",
+    "bytes": 7484,
+    "sha256": "37d9b8207e968ade8082a01d8f890d6c4177435b685fd40a9923d3c2ac87ff4d"
+  },
+  {
+    "path": "fpga/audio/src/score_accompaniment.v",
+    "bytes": 2376,
+    "sha256": "45ade413eea6af09af7c8b1600a6128746f51222098f6f069be331077ee54fda"
+  },
+  {
+    "path": "fpga/audio/src/uart_rx.v",
+    "bytes": 4282,
+    "sha256": "e598963f1d1f81227c916d91d4d60f82bb29feca9524b1704b6c9ec0d93a3339"
+  },
+  {
+    "path": "fpga/audio/src/vib_lfo.v",
+    "bytes": 1702,
+    "sha256": "e2dd558896ebf110689ebf81e665678857a268ee5278966e7510ddde584ee2d6"
+  },
+  {
+    "path": "fpga/audio/src/wax_frame.v",
+    "bytes": 7980,
+    "sha256": "d3635b09da03822da056f674a13a3e91b1d4e9c86473b39ab3b71e8f0f76ce2e"
+  },
+  {
+    "path": "fpga/build.bat",
+    "bytes": 1535,
+    "sha256": "6d80228000d03c2dd9edcb432f4df4a9b8deaf12bcb6b82bc43d16ed52364da4"
+  },
+  {
+    "path": "fpga/constraints/clock.sdc",
+    "bytes": 11180,
+    "sha256": "f7e7d3c66f6606ca44343eef4fce45bff430c70036defb574b30f3d3c961a3d8"
+  },
+  {
+    "path": "fpga/constraints/music_pro.cst",
+    "bytes": 7891,
+    "sha256": "9d90b7181c5464adea8aeb6d593c5eb18216073b27c7c570a5c72fea9805b7b6"
+  },
+  {
+    "path": "fpga/music_pro.gprj",
+    "bytes": 4851,
+    "sha256": "a2e868887786542b52af579403b80eead09e8aff97166287638209034409e287"
+  },
+  {
+    "path": "fpga/phone_app/game.css",
+    "bytes": 5541,
+    "sha256": "16e8c2d371957450a671cd8bbfbf8e64af574542ca6628fbda85c34648e5a98b"
+  },
+  {
+    "path": "fpga/phone_app/game.js",
+    "bytes": 16146,
+    "sha256": "7d6e259982c0dfd1210888a60727fa4b07b95be8323c016ced4af0465940cc23"
+  },
+  {
+    "path": "fpga/phone_app/gateway.py",
+    "bytes": 13660,
+    "sha256": "c6fff91707ad06ba8492c71e52c69f9d51488b983c39b5ee16c7a0bc79284b10"
+  },
+  {
+    "path": "fpga/phone_app/index.html",
+    "bytes": 12803,
+    "sha256": "01952e75ca613700fa82523955a60f974c25208627a746deb177d5a7b2fcb4e2"
+  },
+  {
+    "path": "fpga/phone_app/JDY31_CP2102_138K接线与调试.md",
+    "bytes": 8604,
+    "sha256": "06f6fd8144b1e97761cba9c4ee2e080dd14f91c40d8b62bb7ae4eee8bf12b9d2"
+  },
+  {
+    "path": "fpga/phone_app/README.md",
+    "bytes": 3610,
+    "sha256": "fe538e229b6ea135733fe764898f46d35fbb3caff0e9966088c0963a3ca45b76"
+  },
+  {
+    "path": "fpga/phone_app/requirements.txt",
+    "bytes": 14,
+    "sha256": "0b81718d1cbe8a7696e45a9388c9205272b5e345cd79d0cf1ccfb7a9fd1925e9"
+  },
+  {
+    "path": "fpga/phone_app/rhythm-core.js",
+    "bytes": 2252,
+    "sha256": "ca241a426649fdec160ca4c2c7798d312262202c9ae8a699b014eb90def477fa"
+  },
+  {
+    "path": "fpga/phone_app/test_gateway.py",
+    "bytes": 8995,
+    "sha256": "7549bd95982ae7f61eb82c02c5f16a84c0a2e829a6ab492f5601eccbbb93be61"
+  },
+  {
+    "path": "fpga/phone_app/test_rhythm.cjs",
+    "bytes": 2026,
+    "sha256": "3ce6f77677b802b0fda95f53e63fb77f84e03424bee5710c6748e937e5685bb5"
+  },
+  {
+    "path": "fpga/phone_app/vendor/LICENSE_pyserial.txt",
+    "bytes": 1885,
+    "sha256": "f91cb9813de6a5b142b8f7f2dede630b5134160aedaeaf55f4d6a7e2593ca3f3"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/entry_points.txt",
+    "bytes": 112,
+    "sha256": "f80437a159889fbaed5b90e1d0eba9f741ead2a90894c8fbf6a1a674321793d5"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/METADATA",
+    "bytes": 1650,
+    "sha256": "42a8ab7e94ef0b7baa7e94cdac65d6b9254c608476f630120c990007bf472943"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/metadata.json",
+    "bytes": 1647,
+    "sha256": "b39ac55f140a2fd4173b750c5d1998a0c5c6450b7696897aeeb7ffeb84b5bf5d"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/top_level.txt",
+    "bytes": 7,
+    "sha256": "1528df5875b0f958cf884a8e86db5b88ff85f0e1e7fa58a2c6ad7028bd9f58e0"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/WHEEL",
+    "bytes": 110,
+    "sha256": "91db0dfb93890192221cdfa23b846197cd8ac92d1b0d67f8b81c0c6e435a7ebf"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/__init__.py",
+    "bytes": 3212,
+    "sha256": "5dec897fdef45a0eaf63eacda1e01d62e1e75490302584ae0238f75376592344"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/__main__.py",
+    "bytes": 45,
+    "sha256": "a12a559270d2d98aa7d89757943b39164d04f1c71d88b209697bcf5948b3423d"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/rfc2217.py",
+    "bytes": 59700,
+    "sha256": "9dc1bfe53b38d8cfd39bfed737743b884db8cbe946730bb68c2dcc15212fe817"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/rs485.py",
+    "bytes": 3305,
+    "sha256": "f6deb2b8672d7b7ea093c1b553a3606e82951ad25416ab5ba403978fbbd8c4cd"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/serialcli.py",
+    "bytes": 9190,
+    "sha256": "bb94271bdd14c6db6ab061bd9d88248f4194c9bd3020ec739548312788027338"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/serialjava.py",
+    "bytes": 8480,
+    "sha256": "01c1cba760ffb008a1bbb2ffc02720f26b64edeb5feb30320782ffb6eb61568f"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/serialposix.py",
+    "bytes": 35127,
+    "sha256": "5d56f98513391e1766a1847a04e2e1202ced4172a152803ba1c823a149a9b6f9"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/serialutil.py",
+    "bytes": 21797,
+    "sha256": "3c84f8c7c319f161a85d6f8db5bedc4f65255714589bdcbeee6f2daf65a17c0a"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/serialwin32.py",
+    "bytes": 20284,
+    "sha256": "17681ea9a650120c71db1aae9b8881301a40d38c47b34bb0da050e3f5bfbbe00"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/threaded/__init__.py",
+    "bytes": 9319,
+    "sha256": "8a45e52987a3465cf30b37bd930c51fee00129ad587ee4f2a9c3e3c375515752"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/hexlify_codec.py",
+    "bytes": 3677,
+    "sha256": "1512523bca5f8cce8047dfd206a2f7e1ee742d592f9737c529d98249c1a7e34f"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports.py",
+    "bytes": 3389,
+    "sha256": "7830e8c888684b77fd0f7095a6d86a95052a891da5f97d154c618e063b8ce1ec"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports_common.py",
+    "bytes": 3736,
+    "sha256": "c791c88211b8348cfe5dfe625fa1a4ef165f75e69db36b6a0ac7f226187721fb"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports_linux.py",
+    "bytes": 4503,
+    "sha256": "5275355583f534923b27c667ee063e03699b8b596e81b159495ced7d7f0fd695"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports_osx.py",
+    "bytes": 11178,
+    "sha256": "7a879f3068ae26a0be382bbd6805aaa895fbe701a5073a2a67a91d98c03cd8b3"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports_posix.py",
+    "bytes": 4535,
+    "sha256": "118a83e6445b9347f66b9b1c6914b8b605860729e4a551fbee36bf1ba4b75211"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/list_ports_windows.py",
+    "bytes": 16021,
+    "sha256": "53813370e02253ae8b5a83dd317236a0e3382c2779bcac0edc381e4d3e8cdea7"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/tools/miniterm.py",
+    "bytes": 37840,
+    "sha256": "7d7be4114f4513253b1cf48d13c6dd5f638282219880279ed3aeb2179f27a2db"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_alt.py",
+    "bytes": 2033,
+    "sha256": "fa46280a0cbd1b231637ac02f0e7b0f052f4e0b8cbe0db71dc71d5a924ca19c4"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_cp2110.py",
+    "bytes": 8540,
+    "sha256": "8942ce4f855dc36d0fff0da37d259db74ae8518d4abbcc495471d873a7772266"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_hwgrep.py",
+    "bytes": 3159,
+    "sha256": "19d29d43db44c4a447273b223dc43d13199a2daebe03bd6ae768b88d0c66a019"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_loop.py",
+    "bytes": 10623,
+    "sha256": "e5b6abaeefe17f03646b28e3073e30dec9c1267d06ec2f9f1bbf9098769e4d6a"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_rfc2217.py",
+    "bytes": 317,
+    "sha256": "20f3bcaf7a4537ac840e5d59bf68e05277c86b4b50d2263466c0fcff184051e4"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_socket.py",
+    "bytes": 14299,
+    "sha256": "428b5a1c23ddeadf74dd6ffd7dad8bbffe6e125ab49e88abd828b5d1af7ced73"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/urlhandler/protocol_spy.py",
+    "bytes": 9130,
+    "sha256": "15d51a538dfe6e5d4a5d3cbf4b81e1cf2195e61a54b28a66f08a93ad7d955fee"
+  },
+  {
+    "path": "fpga/phone_app/vendor/serial/win32.py",
+    "bytes": 11138,
+    "sha256": "964eaba1df661e4ab381c8666aa077ca08939260164cd434d0827df39663bd32"
+  },
+  {
+    "path": "fpga/phone_app/启动手机控制台.bat",
+    "bytes": 499,
+    "sha256": "809a1ab833aaf95461c555942cff0481dafe174cde30d66f5740a836baf38ad3"
+  },
+  {
+    "path": "fpga/phone_app/示例曲谱.json",
+    "bytes": 207,
+    "sha256": "83e291af265bcb44199955a49e7dd43e480dac49f8bc5707e0805457bb6b9162"
+  },
+  {
+    "path": "fpga/phone_app/联调增强版说明.md",
+    "bytes": 200,
+    "sha256": "51e29bf4350a49f7985f90ba06000c861cec61b469a9f3f8c09aba888883172b"
+  },
+  {
+    "path": "fpga/program.bat",
+    "bytes": 1551,
+    "sha256": "9372a9b967ded78621ef842814d64c099f714ceadfea7775c4079c0b50922b8f"
+  },
+  {
+    "path": "fpga/rtl/audio_lissajous_scope.v",
+    "bytes": 6450,
+    "sha256": "38b0f035ba464f2a2b10d13d39578264943398b4242fcc19b6e7f1b7a2bbfbcf"
+  },
+  {
+    "path": "fpga/rtl/audio_spectrum_goertzel.v",
+    "bytes": 11462,
+    "sha256": "e6da610d1e858dbfe78fa1e8d38ac275c24358d61ab2141025065ae352fc467e"
+  },
+  {
+    "path": "fpga/rtl/audio_wave_scope.v",
+    "bytes": 5977,
+    "sha256": "89fa4fda167b6c0712986a2f12ec44c8cfee3538d69bee9146d73e5e39863e0d"
+  },
+  {
+    "path": "fpga/rtl/bin2bcd.v",
+    "bytes": 3048,
+    "sha256": "c013fbb28443a66e2f2fb1f907ace17f3c23691a0465956326eb866274fd198a"
+  },
+  {
+    "path": "fpga/rtl/bt_uart_link.v",
+    "bytes": 5440,
+    "sha256": "74f171a302bb7d83f75b952412560e4bfac5d560601e6c064cf8dc2467096e1d"
+  },
+  {
+    "path": "fpga/rtl/bus_snapshot_cdc.v",
+    "bytes": 2286,
+    "sha256": "950c7efd381f1b43620327aabe55081273d079e6f92fd2927b45abc438c6596b"
+  },
+  {
+    "path": "fpga/rtl/chord_from_keys.v",
+    "bytes": 5598,
+    "sha256": "382f6c6adc581ce7cb83e8988ddc2ab0626ab79df76976a9f632f900133b2aa0"
+  },
+  {
+    "path": "fpga/rtl/i2c_register_master.v",
+    "bytes": 9369,
+    "sha256": "6b7d45612737efa230c37ffc2ac8fc7140f5561b9957b3f85a079be242007d91"
+  },
+  {
+    "path": "fpga/rtl/key_matrix_scan.v",
+    "bytes": 7591,
+    "sha256": "327622064e6bbd0f3cf97dcefa734812cae97323722b00a4127d2ac0ab4fd7bc"
+  },
+  {
+    "path": "fpga/rtl/lcd_pll.v",
+    "bytes": 1682,
+    "sha256": "60358c37de0b362e2535418ff00cb99bfbcd1267b7e5368d7f481dff0332a9df"
+  },
+  {
+    "path": "fpga/rtl/midi_uart_rx.v",
+    "bytes": 10770,
+    "sha256": "af3b406b7c276cec57fca4ebbe724c18ee7ddb512ce1b63a06a60bff5190c762"
+  },
+  {
+    "path": "fpga/rtl/mpr121_input.v",
+    "bytes": 7465,
+    "sha256": "316ceca12d81acb12dc7468c253f419c1b2ef8a34106b45cb70dff6d541032db"
+  },
+  {
+    "path": "fpga/rtl/mpr121_sequencer.v",
+    "bytes": 10365,
+    "sha256": "962f76d4b381a2564491f8c73c0c1c698c606e2fd2de5653640117e8a3977b35"
+  },
+  {
+    "path": "fpga/rtl/pitch_bend_apply.v",
+    "bytes": 3469,
+    "sha256": "d607cb07e8161155d762764df9c47de53be55ad27ca1647beb3eaad4f04affbb"
+  },
+  {
+    "path": "fpga/rtl/pressure_display_mapper.v",
+    "bytes": 2376,
+    "sha256": "da0c08ba38b0fd0e516f663c4bccd195232c9593e18d485b8892e6662123f4b5"
+  },
+  {
+    "path": "fpga/rtl/reset_sync.v",
+    "bytes": 454,
+    "sha256": "4e6003695751c6787e02c80cb5b7386f6019a47ef41673b136777accbe7004c0"
+  },
+  {
+    "path": "fpga/rtl/rhythm_judge.v",
+    "bytes": 5750,
+    "sha256": "a6b493f9c53953d2710cff39d6bce38d456a3b6011c04b17b38937e1bf90a096"
+  },
+  {
+    "path": "fpga/rtl/score_display_core.v",
+    "bytes": 16991,
+    "sha256": "a3e20c90502857595e337a4a0c49544381df9de811f5c8b1f7685d1ae949efe9"
+  },
+  {
+    "path": "fpga/rtl/score_loader_core.v",
+    "bytes": 7600,
+    "sha256": "387444503b071f8cf305d43efa6f204def417511370e997f62707ebc291d7106"
+  },
+  {
+    "path": "fpga/rtl/score_loader_uart.v",
+    "bytes": 2244,
+    "sha256": "432d6c858dfa38037ae2ba5f7731265c8f7387f81b814b1f6e3406807e7dc44a"
+  },
+  {
+    "path": "fpga/rtl/score_note_matcher.v",
+    "bytes": 3100,
+    "sha256": "ce5f0af4930bd067adfaba4e825ca28de76c6472db718a7931c6a6d9f02ffb80"
+  },
+  {
+    "path": "fpga/rtl/score_transport.v",
+    "bytes": 24482,
+    "sha256": "238913976b78c779ee2f20f0e04e207762ef7ce3f866b551e1449df1480e050a"
+  },
+  {
+    "path": "fpga/rtl/score_ui_renderer.v",
+    "bytes": 189125,
+    "sha256": "a3197c9d99a950038dd81f85b017362077ef1f971924616c5a4677bad3e69888"
+  },
+  {
+    "path": "fpga/rtl/sd_card_ctrl.v",
+    "bytes": 21594,
+    "sha256": "b05385929e17658dcf220fc0afdaaa1fcd07dd2cf05353880fd164c1eaeb4577"
+  },
+  {
+    "path": "fpga/rtl/sd_score_loader.v",
+    "bytes": 21808,
+    "sha256": "b5bdb4ecb66a9df4049e30f315e66df9d73edf2612306e974fc555f6a24f324c"
+  },
+  {
+    "path": "fpga/rtl/sd_wav_player.v",
+    "bytes": 23764,
+    "sha256": "3c8c8023c58b87caf9682b7afa1bce34c3c7b341a66f011ddcfc876c859a07fb"
+  },
+  {
+    "path": "fpga/rtl/showcase_director.v",
+    "bytes": 4198,
+    "sha256": "864134ec127305b2a94d2e770854817b7bd109ed7fe844eb9286a285c2d574e7"
+  },
+  {
+    "path": "fpga/rtl/showcase_uart_rom.v",
+    "bytes": 5423,
+    "sha256": "a6fba1a3ec28a667de581d91bc59d20d774f1842d4661df8b1c3e2076e88aa7d"
+  },
+  {
+    "path": "fpga/rtl/spi_master.v",
+    "bytes": 4025,
+    "sha256": "9dc5beeef215371bb29791cceafebd5066a8eb3d8cd1014e0d521b895c59e929"
+  },
+  {
+    "path": "fpga/rtl/top_music_pro.v",
+    "bytes": 57786,
+    "sha256": "69c5b86a7dd79f8dc701c217c30b6882d3f19f7095d7a29c3a3f015a655ea703"
+  },
+  {
+    "path": "fpga/rtl/top_score_fsr16_ui.v",
+    "bytes": 7313,
+    "sha256": "ef0c7bfb425923ca778cbc52aba69dca89f460c0151a0803f8de53c1440e8351"
+  },
+  {
+    "path": "fpga/rtl/touch_carrier.v",
+    "bytes": 9783,
+    "sha256": "b471f1b5e5466e6bfb4c50fd75c740f93b41ae0095c8c791aae0d64603835fec"
+  },
+  {
+    "path": "fpga/rtl/ui_action_button.v",
+    "bytes": 2211,
+    "sha256": "e5e222655e2e0dcf55a53371de1826ddf9c69dea9c19e6345d024d21bdf03d83"
+  },
+  {
+    "path": "fpga/rtl/ui_text_font.v",
+    "bytes": 189583,
+    "sha256": "99348bd6931ef7939ac94620f7ef9cdb9a381b69629b213947068c2a6444b316"
+  },
+  {
+    "path": "fpga/rtl/ui_view_state.v",
+    "bytes": 1894,
+    "sha256": "85d13b737bf3984f4b492c65bc6267317b4edf6cee6d7459f962ca10d3add021"
+  },
+  {
+    "path": "fpga/rtl/ui_volume_control.v",
+    "bytes": 4135,
+    "sha256": "1329dbfc67c408d6fed57ee96dcd485da7980717fa0b243419906e430786b762"
+  },
+  {
+    "path": "fpga/rtl/user_song_rom.v",
+    "bytes": 119860,
+    "sha256": "c173598364544a7e200834c89dffb0d0a757133c5263ff04915b96331d20547c"
+  },
+  {
+    "path": "fpga/run_all.tcl",
+    "bytes": 226,
+    "sha256": "5a395d1a3be20cca7bdd1bbeb64c6dc6c268b8e399046257fce0762b2f0932f4"
+  },
+  {
+    "path": "fpga/showcase_stages.json",
+    "bytes": 3262,
+    "sha256": "3ec0e27a41e92fba21b5888c7641d531ccc54173414eabcfecc30aa01f3ee8d8"
+  },
+  {
+    "path": "fpga/sim/dbg_key.v",
+    "bytes": 1500,
+    "sha256": "00bd83dc2949deffc9d3895a36992c833ff266768557c246e3d82d1bafe5ef75"
+  },
+  {
+    "path": "fpga/sim/mpr121_slave_model.v",
+    "bytes": 4672,
+    "sha256": "0bb3ae76cf43fb42fd6ac966b7055f3c7293bea899b399927285a3576e1315c0"
+  },
+  {
+    "path": "fpga/sim/run_all_sim.sh",
+    "bytes": 5335,
+    "sha256": "ae7ca0f38b8a49241a86807a499793e99d6a0070d26a92c658a1eaf1604ef00a"
+  },
+  {
+    "path": "fpga/sim/sd_card_model.v",
+    "bytes": 6422,
+    "sha256": "0da889ced6f109c9b23d995aa1d1d1c16fa998b229aae833bfc3bc0d95fc65e8"
+  },
+  {
+    "path": "fpga/sim/showcase_expected.mem",
+    "bytes": 96,
+    "sha256": "5efdbe95c2821d45f4b4d8d8341c818cf1454fd6a419c632dcb96c140df43335"
+  },
+  {
+    "path": "fpga/sim/showcase_expected_count.txt",
+    "bytes": 2,
+    "sha256": "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db"
+  },
+  {
+    "path": "fpga/sim/tb_accomp_mix.v",
+    "bytes": 5123,
+    "sha256": "22fe44fd1c896be4f299f045e37bb887f0b8cec6f9d1f325ac184243bbe8cf4f"
+  },
+  {
+    "path": "fpga/sim/tb_bin2bcd.v",
+    "bytes": 4165,
+    "sha256": "e401b7ca27fe71a1d956cd482f84d06e02913ebc8c65dd34698b9134b06be547"
+  },
+  {
+    "path": "fpga/sim/tb_bus_snapshot_cdc.v",
+    "bytes": 3740,
+    "sha256": "8dd740546624803ad458eeb74e635d4d0ec9994a18746be2ec0691d8e70c881c"
+  },
+  {
+    "path": "fpga/sim/tb_chord.v",
+    "bytes": 3543,
+    "sha256": "7959d3aeffd91e17cc6bb6c3065f3de1e51142b3bae656f1f8f08c3231906fcb"
+  },
+  {
+    "path": "fpga/sim/tb_display_integrity.v",
+    "bytes": 7242,
+    "sha256": "464916155498db14cefaa7e8c7c3e3437899f32c03337a0ffb0f9f94656baf20"
+  },
+  {
+    "path": "fpga/sim/tb_fall_notes.v",
+    "bytes": 8463,
+    "sha256": "6c9fd376171e42ce7f4933047932021a08db5f3cd2a03badddf4127f98d2af7e"
+  },
+  {
+    "path": "fpga/sim/tb_fat_dbg.v",
+    "bytes": 6596,
+    "sha256": "55cb0275766180ca63efd3eb8546b05712eea87835b7c3f05d30918bfbe29807"
+  },
+  {
+    "path": "fpga/sim/tb_fsr_gate.v",
+    "bytes": 3896,
+    "sha256": "c2ea50e6f942de4e0271522a0253e0329a43f508edcce43eb7782c8c1df0e849"
+  },
+  {
+    "path": "fpga/sim/tb_fx_runtime.v",
+    "bytes": 3509,
+    "sha256": "529f47f74cb6a510a4ea3d12c08bdae1bc1f78b5dcb323b0772d264330d3ef89"
+  },
+  {
+    "path": "fpga/sim/tb_guidance_pipe.v",
+    "bytes": 12583,
+    "sha256": "9923aa4c517b64af31a07bb3612ae204b64d6af68bc9c9d9b09ac58fff93aa30"
+  },
+  {
+    "path": "fpga/sim/tb_key_matrix.v",
+    "bytes": 4561,
+    "sha256": "78ab80357a13818dabcc8dc704689469af6bd8189d6da09769e8002f9ca34de8"
+  },
+  {
+    "path": "fpga/sim/tb_latency.v",
+    "bytes": 5603,
+    "sha256": "c22e7c5d0853a21f43aaafc75199065c1d0cd295ceb7f1d9936b86e3a9adc47c"
+  },
+  {
+    "path": "fpga/sim/tb_lissajous_scope.v",
+    "bytes": 8013,
+    "sha256": "ae7b0a64aed910fa5ccb23f3f6d3fb3793c2d28c3505b606d92ff85cb04585ea"
+  },
+  {
+    "path": "fpga/sim/tb_midi_rx.v",
+    "bytes": 6322,
+    "sha256": "08f8318bdd2d098279486a5be7a1c5224ec20d72d300c88cf060f878088c6db0"
+  },
+  {
+    "path": "fpga/sim/tb_page_dump.v",
+    "bytes": 11702,
+    "sha256": "031a9e9e6247f8c55468bfed0dc402d0359e7c0a63e20b3eeee036800638ae82"
+  },
+  {
+    "path": "fpga/sim/tb_pcm_capture.v",
+    "bytes": 1410,
+    "sha256": "b8662776a31a0f7d0ed28a47cffe0b65a1a3823fe23ecd4b2197af4485742102"
+  },
+  {
+    "path": "fpga/sim/tb_pitch_bend.v",
+    "bytes": 5988,
+    "sha256": "59ee228ad399fbcc9b141061cdcbe2e4fd6fbec3cda56e2d074403b3f7ab30c9"
+  },
+  {
+    "path": "fpga/sim/tb_rhythm_hud.v",
+    "bytes": 7301,
+    "sha256": "2ca4e6bf96e735f6c0e5f4bc7c7f7914f3685916e8cde84d1d002463cdf2266d"
+  },
+  {
+    "path": "fpga/sim/tb_runtime_controls.v",
+    "bytes": 3307,
+    "sha256": "46ac2c125b6ca0ca4e88ef3303766c6aa86f6d6266766965df9a8d59b3b3d577"
+  },
+  {
+    "path": "fpga/sim/tb_score_capacity.v",
+    "bytes": 11154,
+    "sha256": "99ac49fbaaad7a116417ff2d74c088abab37fa946cbad4e8748170d7856b237b"
+  },
+  {
+    "path": "fpga/sim/tb_sd_dbg.v",
+    "bytes": 2089,
+    "sha256": "841522014e1ba48f14285c7df5ae30e1e6dc3bcb106987bf040efb23c41e19c5"
+  },
+  {
+    "path": "fpga/sim/tb_sd_multiblock.v",
+    "bytes": 15536,
+    "sha256": "94efc3d56df9d4a29be4e9ee82f8a10b4ed9aec0abb34a012b72cdb80d924c51"
+  },
+  {
+    "path": "fpga/sim/tb_sd_score.v",
+    "bytes": 11890,
+    "sha256": "d01e7b67402e1cc69ad76e860cefea8128497f263a3099b9fedd25879c5d4ca4"
+  },
+  {
+    "path": "fpga/sim/tb_showcase_director.v",
+    "bytes": 1623,
+    "sha256": "6f5278db95be8cdd3eebe7ad40fb51499a374c6b479379434dfd607845b8cd49"
+  },
+  {
+    "path": "fpga/sim/tb_showcase_import.v",
+    "bytes": 1451,
+    "sha256": "8af1f5e0add3605c2a4f7edc01e289b868c07753f45b445f8e817dcbcd2bb785"
+  },
+  {
+    "path": "fpga/sim/tb_showcase_midi_score.v",
+    "bytes": 1211,
+    "sha256": "4620afcf77406989e877fa88507655206f92713c78dfca9074a8c6a016976c8e"
+  },
+  {
+    "path": "fpga/sim/tb_showcase_transport.v",
+    "bytes": 1933,
+    "sha256": "51ca5c6cfaf00b436bb07b89fb8acc82a32d3e88f717c0f4fa1612e39d53ba66"
+  },
+  {
+    "path": "fpga/sim/tb_spectrum_goertzel.v",
+    "bytes": 7140,
+    "sha256": "ae285e21df4e112cf417887ecf3d59052c7dc19c356983781ac178a23d2cc5fc"
+  },
+  {
+    "path": "fpga/sim/tb_test_voices.v",
+    "bytes": 2786,
+    "sha256": "3efaf55422c2748ddf904d4669dc9eb90922c8db09a634afe35e3c859f8190ea"
+  },
+  {
+    "path": "fpga/sim/tb_touch_carrier.v",
+    "bytes": 6829,
+    "sha256": "090a32c4818ab11fadfcc9d27108bde2597ba973b6e1d4ca71fa186b7c7cc191"
+  },
+  {
+    "path": "fpga/sim/tb_uart_baud_check.v",
+    "bytes": 6474,
+    "sha256": "70e8a61c4ca4b066b18a84fba46c5bf0cc49da5e4edd9a18ecc364db608842b8"
+  },
+  {
+    "path": "fpga/sim/tb_uart_jdy9600.v",
+    "bytes": 5621,
+    "sha256": "8ee5842b11b5122517c333a2f63444b879a1607efac299b02a4bc25208275026"
+  },
+  {
+    "path": "fpga/sim/tb_visual_pages.v",
+    "bytes": 5313,
+    "sha256": "e8c705b0c202eb068ec0b04a2b757d81227959da643f7ad4e22802ef7df80398"
+  },
+  {
+    "path": "fpga/sim/tb_wave_scope.v",
+    "bytes": 6877,
+    "sha256": "15673e9a10fddff34d2b8a0dc5a214d17c0675565631715d7421dafca75cd926"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3843,
+    "sha256": "541fc3aacead1e3b56295480b9fa8e41b8685319a8002caf93e20513472a23c0"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 606,
+    "sha256": "02765251cd6add3fb5e30f6be8a61746ebc89c52a8e8b607c29eb75ee212f946"
+  },
+  {
+    "path": "tools/run_rtl.py",
+    "bytes": 2586,
+    "sha256": "91815c7c7174742be54bd0a2ffecd526215863622bb92a72902f7095802d8310"
+  },
+  {
+    "path": "verification/browser.json",
+    "bytes": 636,
+    "sha256": "8c584ab01d309e31a2b4501c7315d43e39ab975d539a6bd77e1a7187650889fc"
+  },
+  {
+    "path": "verification/browser.log",
+    "bytes": 531,
+    "sha256": "8c1e07923cbb2f94e44564f5ee680f74c57b6851a5e649b5e5b3bc36d32b93bf"
+  },
+  {
+    "path": "verification/gateway.log",
+    "bytes": 2354,
+    "sha256": "5c77353fd32f25efbfeabdea19917f1f8c1292b9b47627d0cab0c11e93bdda4e"
+  },
+  {
+    "path": "verification/README.md",
+    "bytes": 283,
+    "sha256": "915c0f43056357660a11d23b195339a18d397325f3754b1b9692a75a7adbc1e0"
+  },
+  {
+    "path": "verification/rhythm.log",
+    "bytes": 380,
+    "sha256": "e60f6f8eaf8e7702d4a2067140b42486a0eabd3b207d4acc314f61d34ec702f2"
+  },
+  {
+    "path": "verification/rtl/results.json",
+    "bytes": 1843,
+    "sha256": "0a95a3815d5c9dd7597c25ed5afe295e69eafdddaa7e338f63241a86fdcc5301"
+  },
+  {
+    "path": "verification/rtl/tb_accomp_mix.log",
+    "bytes": 1432,
+    "sha256": "1cb4dcf4902e918db4bf2329017f52488e4776697cfc370a334ffb072eae0e31"
+  },
+  {
+    "path": "verification/rtl/tb_bin2bcd.log",
+    "bytes": 531,
+    "sha256": "cdac80240b71311ac892d8e52c7665a93a73e8b82791e5f75976970f6511e328"
+  },
+  {
+    "path": "verification/rtl/tb_bus_snapshot_cdc.log",
+    "bytes": 331,
+    "sha256": "e5fab97000c58880729f9d222d52c23d8a66cfe7eb1e268b0c211c5f1566dde2"
+  },
+  {
+    "path": "verification/rtl/tb_chord.log",
+    "bytes": 1269,
+    "sha256": "ab98cb65f9cfbd383275e57433d1b144b58f2117ea4259dadafbb5329b7714b3"
+  },
+  {
+    "path": "verification/rtl/tb_display_integrity.log",
+    "bytes": 1032,
+    "sha256": "8fd0d8a1703f4f8ec54d366b8800bd3cda17573dddbd38aaaba4c4ae88f9aeff"
+  },
+  {
+    "path": "verification/rtl/tb_fall_notes.log",
+    "bytes": 1475,
+    "sha256": "f9decaf4858ddb1b166b945bebfd47ba1abb29d974380a05ed86acef21323f02"
+  },
+  {
+    "path": "verification/rtl/tb_fsr_gate.log",
+    "bytes": 785,
+    "sha256": "c9ab9608d6d244169e0883df7a10a72e4291351a14d0914a10b0eab2b9fe9e69"
+  },
+  {
+    "path": "verification/rtl/tb_fx_runtime.log",
+    "bytes": 1139,
+    "sha256": "8e8e754ca9fd0cdf0fa0d2989c9a6b44d487193f5059bd1c51c1f1baab8ce56d"
+  },
+  {
+    "path": "verification/rtl/tb_guidance_pipe.log",
+    "bytes": 1870,
+    "sha256": "63680f3550befc415d18c42161c0bed4a52446767904b081a160449d790ff153"
+  },
+  {
+    "path": "verification/rtl/tb_key_matrix.log",
+    "bytes": 907,
+    "sha256": "7bd40b07b9a0b845169e27ff330fc25c81293525ac6feaf2c4f76250f0575491"
+  },
+  {
+    "path": "verification/rtl/tb_latency.log",
+    "bytes": 1759,
+    "sha256": "0c6cfca3fcd83749c0576c6e167814f955e69298068c0aa9f84fc0e41be12a1d"
+  },
+  {
+    "path": "verification/rtl/tb_lissajous_scope.log",
+    "bytes": 1107,
+    "sha256": "bd90554713fc92274aa389ca8187a4301143b2a84676b0068aa0aec0bc4e57c4"
+  },
+  {
+    "path": "verification/rtl/tb_midi_rx.log",
+    "bytes": 1044,
+    "sha256": "27b1fd5a41e7a106704cf215260570408c9aa23275a57e3579b26f789141107d"
+  },
+  {
+    "path": "verification/rtl/tb_pitch_bend.log",
+    "bytes": 1007,
+    "sha256": "129ae2c388bcb9c0d00b19d585a924d78137c3c585059ef2ab255d00f2edfcd2"
+  },
+  {
+    "path": "verification/rtl/tb_rhythm_hud.log",
+    "bytes": 951,
+    "sha256": "f626a52a3bbee98c96c10d3f44d70d39a4f31668dd5378ee7ee617dfa2a64f9b"
+  },
+  {
+    "path": "verification/rtl/tb_runtime_controls.log",
+    "bytes": 1198,
+    "sha256": "2671c3c44b599126b5ec89c7d0676afde550d68a0f83ef845037ca6713015bc6"
+  },
+  {
+    "path": "verification/rtl/tb_score_capacity.log",
+    "bytes": 1302,
+    "sha256": "240a4273ace5dd5a2231fa99a8ac2beb1b67b8ad19583b2645aa8db309290815"
+  },
+  {
+    "path": "verification/rtl/tb_sd_multiblock.log",
+    "bytes": 1699,
+    "sha256": "a02859c414b38fe36958c367e2d594ce543336e24d49afe722b7985bdc2af5e6"
+  },
+  {
+    "path": "verification/rtl/tb_sd_multiblock_spc8.log",
+    "bytes": 1699,
+    "sha256": "b2ef777c04a572561df6c9e945051cde91495ef5c53cdadb9fbffc8637b2672e"
+  },
+  {
+    "path": "verification/rtl/tb_sd_score.log",
+    "bytes": 309134,
+    "sha256": "efcb4ba46a7b9f46de08edd2aa4323d20b35e0bfd2cb12fc820e6b31ea7bed2e"
+  },
+  {
+    "path": "verification/rtl/tb_showcase_director.log",
+    "bytes": 1098,
+    "sha256": "80f471dcc136dd879a0e22a244968b57fce02cbdce70d97c3677e366c1c7aa5c"
+  },
+  {
+    "path": "verification/rtl/tb_showcase_import.log",
+    "bytes": 163,
+    "sha256": "5201427d303d436689a311d507c75a08c793188e2de85f492d7b196c1a00e505"
+  },
+  {
+    "path": "verification/rtl/tb_showcase_midi_score.log",
+    "bytes": 105,
+    "sha256": "b3d5e4b24cc7172cae2446aba674e7ce280c1a69eab38fb350eb5c791935dabe"
+  },
+  {
+    "path": "verification/rtl/tb_showcase_transport.log",
+    "bytes": 102,
+    "sha256": "a6949f3944c0fb261903d5f22f679e077c0d658ebf4bec13dffc42e467eb7d8b"
+  },
+  {
+    "path": "verification/rtl/tb_spectrum_goertzel.log",
+    "bytes": 5203,
+    "sha256": "c9b60e1dc6f9385588ba2d21e3921bbb177b248ab5d84c9a3e6d4cf3d2ae7070"
+  },
+  {
+    "path": "verification/rtl/tb_test_voices.log",
+    "bytes": 764,
+    "sha256": "fa652853a4d83dba36ed8d383e99fa7df05ecd5ba656fb1973c41afdd0b7a924"
+  },
+  {
+    "path": "verification/rtl/tb_touch_carrier.log",
+    "bytes": 749,
+    "sha256": "18fec3b0499f0b147b2dccac482b1127046a51c26a6511da4f1a09cac7c85141"
+  },
+  {
+    "path": "verification/rtl/tb_uart_baud_check.log",
+    "bytes": 721,
+    "sha256": "14807a85821a4dae812124112f19f4b9f8a261bd2414eb4ffc91ec4303612111"
+  },
+  {
+    "path": "verification/rtl/tb_uart_jdy9600.log",
+    "bytes": 716,
+    "sha256": "490c915914d6299173f656fcfb1b60063504959d19acf93f6213d3b20f0c8105"
+  },
+  {
+    "path": "verification/rtl/tb_visual_pages.log",
+    "bytes": 643,
+    "sha256": "321526172051fb3d6a8f728b3933a3fc47c1c86cc95d268baa2162fdf972c6f3"
+  },
+  {
+    "path": "verification/rtl/tb_wave_scope.log",
+    "bytes": 927,
+    "sha256": "9347e6fe6f3ef2e4012709d7a5dc43438274ff48af7260188c3f79c8392b8a13"
+  },
+  {
+    "path": "verification/packaged_retest.json",
+    "bytes": 2275,
+    "sha256": "71d1a4920c854703b5e4fa4a41525686573d646a28bd453cb16d4edb9fe43deb"
+  }
+]

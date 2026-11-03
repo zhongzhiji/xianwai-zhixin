@@ -1,0 +1,27 @@
+=== tb_wave_scope: audio_wave_scope frontend ===
+  PASS  T1 reset: sample=0
+  PASS  T1 reset: peak=0
+  PASS  T1 reset: level=0
+  PASS  T1 reset: toggle=0
+  PASS  T2 first beat emits a sample
+  PASS   sample = pcm[15:8] (1000/256=3)
+  PASS  T3 toggle flipped once
+  PASS   only 1 sample in first 16 beats
+  PASS  T2 17th beat emits 2nd sample
+  PASS  T3 toggle flipped twice
+  PASS  T5 peak rises to 117
+  PASS  T5 peak <= full scale 127
+  PASS  T6 -32768 saturates to peak 127
+  PASS  T6 -32768 sample is -128
+  PASS  T8 level climbs above 40
+  PASS  T8 level <= 127
+  PASS  T8 level decays when muted
+  PASS  T7 muted: sample=0
+  PASS  T7 muted: peak=0
+  PASS  T7 muted: level=0
+  PASS  T5 peak starts decaying
+  PASS  T5 decay is gradual (>= p0-4)
+----------------------------------------
+  PASS=22  FAIL=0
+  *** tb_wave_scope ALL PASS ***
+sim/tb_wave_scope.v:172: $finish called at 55322000 (1ps)

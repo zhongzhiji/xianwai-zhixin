@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "title": "我的未来式",
+  "date": "2026-10-10",
+  "score_file": "future_style.json",
+  "method": "逐小节人工读谱；直接查看用户原图，并对数字、减时线、音域点、附点、连线进行无损局部放大核查。没有网络旋律来源，没有根据歌词猜音。",
+  "source_degree_mapping": {
+    "0": 0,
+    "1": 67,
+    "2": 69,
+    "3": 71,
+    "4": 72,
+    "5": 74,
+    "6": 76,
+    "7": 78,
+    "1+": 79,
+    "2+": 81,
+    "3+": 83,
+    "5+": 86
+  },
+  "source_row_map": [
+    {
+      "source_file": "215517a67b0c014706a6b990fead30e7.jpg",
+      "row": 1,
+      "bars": [
+        1,
+        6
+      ],
+      "status": "纯静音，省略"
+    },
+    {
+      "source_file": "215517a67b0c014706a6b990fead30e7.jpg",
+      "row": 2,
+      "bars": [
+        7,
+        11
+      ],
+      "status": "第7小节纯静音省略，第8至11保留"
+    },
+    {
+      "source_file": "215517a67b0c014706a6b990fead30e7.jpg",
+      "row": 3,
+      "bars": [
+        12,
+        15
+      ]
+    },
+    {
+      "source_file": "215517a67b0c014706a6b990fead30e7.jpg",
+      "row": 4,
+      "bars": [
+        16,
+        20
+      ]
+    },
+    {
+      "source_file": "215517a67b0c014706a6b990fead30e7.jpg",
+      "row": 5,
+      "bars": [
+        21,
+        24
+      ]
+    },
+    {
+      "source_file": "f31abb2a2dd87c1fc120ade6a05ca2cc.jpg",
+      "row": 1,
+      "bars": [
+        25,
+        28
+      ]
+    },
+    {
+      "source_file": "f31abb2a2dd87c1fc120ade6a05ca2cc.jpg",
+      "row": 2,
+      "bars": [
+        29,
+        33
+      ]
+    },
+    {
+      "source_file": "f31abb2a2dd87c1fc120ade6a05ca2cc.jpg",
+      "row": 3,
+      "bars": [
+        34,
+        38
+      ]
+    },
+    {
+      "source_file": "f31abb2a2dd87c1fc120ade6a05ca2cc.jpg",
+      "row": 4,
+      "bars": [
+        39,
+        43
+      ]
+    },
+    {
+      "source_file": "f31abb2a2dd87c1fc120ade6a05ca2cc.jpg",
+      "row": 5,
+      "bars": [
+        44,
+        48
+      ]
+    }
+  ],
+  "important_checks": [
+    {
+      "bars": [
+        9,
+        13
+      ],
+      "detail": "相应主歌小节的7个主体事件时值为6,6,6,12,6,6,6；第四音为四分音符，不误读为全八分。"
+    },
+    {
+      "bar": 19,
+      "detail": "4,3,4,6,7,6,6 的时值为6,6,6,12,6,6,6；第二个4有减时线，6是四分音符。"
+    },
+    {
+      "bar": 22,
+      "detail": "受水印遮挡的上行识读为5,6,7,高1,7,7,7；局部放大及钢琴55小节同旋律交叉核对，高1主体为四分音符。"
+    },
+    {
+      "bar": 35,
+      "detail": "6和7右侧的点是附点时值，不是高音点；18+18+12=48 ticks。"
+    },
+    {
+      "bars": [
+        36,
+        37
+      ],
+      "detail": "末尾5上方确有高音点，故保留MIDI86(D6)，不偷偷改成D5。"
+    },
+    {
+      "bar": 38,
+      "detail": "开头2,3的两根减时线为十六分音符，各3ticks；之后2为八分6ticks，并延到后一个四分同音2。"
+    },
+    {
+      "bars": [
+        38,
+        39,
+        40
+      ],
+      "detail": "跨行高1同音连线明确：第38小节最后6ticks、第39小节48ticks、第40小节开头24ticks，合并为78ticks。"
+    },
+    {
+      "bars": [
+        25,
+        29,
+        41,
+        45
+      ],
+      "detail": "高3(12)、高3(6)、高2(12)为主体节奏开端，不能因歌词间距改成全八分。"
+    }
+  ],
+  "omitted_grace_notes": [
+    {
+      "bar": 34,
+      "position": "第一个主体高3之前",
+      "degree": "高2"
+    },
+    {
+      "bar": 35,
+      "position": "第一个主体6之前",
+      "degree": "5"
+    },
+    {
+      "bar": 36,
+      "position": "第一个主体高2之前",
+      "degree": "高1"
+    },
+    {
+      "bar": 37,
+      "position": "第一个主体高3之前",
+      "degree": "高2"
+    },
+    {
+      "bar": 38,
+      "position": "中间主体高3之前",
+      "degree": "高2"
+    },
+    {
+      "bar": 38,
+      "position": "最后主体高1之前",
+      "degree": "高2"
+    }
+  ],
+  "uncertainties_and_scope": [
+    "吉他与完整钢琴版本前奏长度和编配不同；本数据只遵循两页吉他谱，不按123小节钢琴总谱虚构缺失或重复段落。",
+    "BPM158来自用户钢琴总谱的速度标注；两页吉他谱本身没有可辨速度数字。",
+    "原谱装饰倚音未给出绝对占时，故明确省略，未任意分配短音时值。",
+    "本数据未经原作者MIDI逐事件比对；质量依据是用户图片逐小节读谱、每小节48ticks及明确连线规则，不宣称与商业录音完全一致。"
+  ],
+  "validation": {
+    "bar_count": 41,
+    "raw_event_count": 230,
+    "merged_event_count": 202,
+    "total_ticks": 1968,
+    "duration_seconds": 62.278481012658226,
+    "minimum_note": 67,
+    "maximum_note": 86,
+    "max_merged_ticks": 78,
+    "bar_tick_sum": 48,
+    "explicit_tie_count": 28,
+    "all_explicit_tie_destinations_same_pitch": true,
+    "all_bar_sums_pass": true,
+    "lyrics_included": false,
+    "accompaniment_included": false
+  }
+}

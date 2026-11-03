@@ -1,0 +1,24 @@
+test_connect_validates_then_opens_default_jdy_baud (test_gateway.GatewayTests.test_connect_validates_then_opens_default_jdy_baud) ... ok
+test_disconnect_failure_preserves_warning (test_gateway.GatewayTests.test_disconnect_failure_preserves_warning) ... ok
+test_disconnect_sends_release_before_close (test_gateway.GatewayTests.test_disconnect_sends_release_before_close) ... ok
+test_expiry_sends_all_notes_off_once (test_gateway.GatewayTests.test_expiry_sends_all_notes_off_once) ... ok
+test_failed_note_retains_uncertain_state (test_gateway.GatewayTests.test_failed_note_retains_uncertain_state) ... ok
+test_failure_retries_are_spaced_and_recover (test_gateway.GatewayTests.test_failure_retries_are_spaced_and_recover) ... ok
+test_fault_blocks_new_music_until_panic (test_gateway.GatewayTests.test_fault_blocks_new_music_until_panic) ... ok
+test_heartbeat_keeps_long_note_alive (test_gateway.GatewayTests.test_heartbeat_keeps_long_note_alive) ... ok
+test_http_validates_body_token_and_ownership (test_gateway.GatewayTests.test_http_validates_body_token_and_ownership) ... ok
+test_http_watchdog_runs_without_further_requests (test_gateway.GatewayTests.test_http_watchdog_runs_without_further_requests) ... ok
+test_invalid_score_does_not_write (test_gateway.GatewayTests.test_invalid_score_does_not_write) ... ok
+test_note_bytes_and_release (test_gateway.GatewayTests.test_note_bytes_and_release) ... ok
+test_other_page_cannot_renew_lease (test_gateway.GatewayTests.test_other_page_cannot_renew_lease) ... ok
+test_other_page_cannot_steal_or_release_note (test_gateway.GatewayTests.test_other_page_cannot_steal_or_release_note) ... ok
+test_panic_allows_new_controller (test_gateway.GatewayTests.test_panic_allows_new_controller) ... ok
+test_partial_write_is_not_success (test_gateway.GatewayTests.test_partial_write_is_not_success) ... ok
+test_preview_expiry_does_not_claim_hardware (test_gateway.GatewayTests.test_preview_expiry_does_not_claim_hardware) ... ok
+test_preview_to_real_does_not_replay_preview_keys (test_gateway.GatewayTests.test_preview_to_real_does_not_replay_preview_keys) ... ok
+test_score_sends_atomic_release_and_complete_frame (test_gateway.GatewayTests.test_score_sends_atomic_release_and_complete_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.176s
+
+OK

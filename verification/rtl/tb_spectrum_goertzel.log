@@ -1,0 +1,150 @@
+== 单音 C4：峰必须落在 bin12 ==
+  [OUT ] bin=0 level=52
+  [PASS] 409��������������������������������������������
+  [OUT ] bin=1 level=44
+  [OUT ] bin=2 level=52
+  [OUT ] bin=3 level=52
+  [OUT ] bin=4 level=44
+  [OUT ] bin=5 level=52
+  [OUT ] bin=6 level=52
+  [OUT ] bin=7 level=44
+  [OUT ] bin=8 level=48
+  [OUT ] bin=9 level=52
+  [OUT ] bin=10 level=52
+  [OUT ] bin=11 level=44
+  [OUT ] bin=12 level=63
+  [OUT ] bin=13 level=56
+  [OUT ] bin=14 level=48
+  [OUT ] bin=15 level=48
+  [OUT ] bin=16 level=44
+  [OUT ] bin=17 level=44
+  [OUT ] bin=18 level=36
+  [OUT ] bin=19 level=32
+  [OUT ] bin=20 level=36
+  [OUT ] bin=21 level=40
+  [OUT ] bin=22 level=40
+  [OUT ] bin=23 level=36
+  [OUT ] bin=24 level=36
+  [OUT ] bin=25 level=36
+  [OUT ] bin=26 level=32
+  [OUT ] bin=27 level=24
+  [OUT ] bin=28 level=32
+  [OUT ] bin=29 level=24
+  [OUT ] bin=30 level=32
+  [OUT ] bin=31 level=32
+  [PASS] ��������������������������� ������������
+  [INFO] max bin=12 level=63
+  [PASS] ��������������������� MIDI60 / bin12
+  [PASS] ������������������������������������
+== 双音 C4 + A4：两个峰都要可辨 ==
+  [OUT ] bin=0 level=48
+  [PASS] 409��������������������������������������������
+  [OUT ] bin=1 level=44
+  [OUT ] bin=2 level=48
+  [OUT ] bin=3 level=48
+  [OUT ] bin=4 level=36
+  [OUT ] bin=5 level=48
+  [OUT ] bin=6 level=48
+  [OUT ] bin=7 level=44
+  [OUT ] bin=8 level=44
+  [OUT ] bin=9 level=48
+  [OUT ] bin=10 level=52
+  [OUT ] bin=11 level=32
+  [OUT ] bin=12 level=63
+  [OUT ] bin=13 level=52
+  [OUT ] bin=14 level=44
+  [OUT ] bin=15 level=44
+  [OUT ] bin=16 level=44
+  [OUT ] bin=17 level=40
+  [OUT ] bin=18 level=44
+  [OUT ] bin=19 level=44
+  [OUT ] bin=20 level=44
+  [OUT ] bin=21 level=63
+  [OUT ] bin=22 level=40
+  [OUT ] bin=23 level=36
+  [OUT ] bin=24 level=36
+  [OUT ] bin=25 level=20
+  [OUT ] bin=26 level=32
+  [OUT ] bin=27 level=36
+  [OUT ] bin=28 level=28
+  [OUT ] bin=29 level=32
+  [OUT ] bin=30 level=24
+  [OUT ] bin=31 level=24
+  [PASS] ��������������������������� ������������
+  [INFO] top1=12/63 top2=21/63 C4=63 A4=63
+  [PASS] �������������������������� C����� A4
+  [PASS] ������������������������������������
+== 32 音：每个目标频点都必须起来 ==
+  [OUT ] bin=0 level=63
+  [OUT ] bin=1 level=63
+  [OUT ] bin=2 level=52
+  [OUT ] bin=3 level=60
+  [OUT ] bin=4 level=63
+  [OUT ] bin=5 level=60
+  [OUT ] bin=6 level=60
+  [OUT ] bin=7 level=56
+  [OUT ] bin=8 level=52
+  [OUT ] bin=9 level=60
+  [OUT ] bin=10 level=63
+  [OUT ] bin=11 level=63
+  [OUT ] bin=12 level=60
+  [OUT ] bin=13 level=52
+  [OUT ] bin=14 level=63
+  [OUT ] bin=15 level=60
+  [OUT ] bin=16 level=60
+  [OUT ] bin=17 level=60
+  [OUT ] bin=18 level=60
+  [OUT ] bin=19 level=60
+  [OUT ] bin=20 level=60
+  [OUT ] bin=21 level=56
+  [OUT ] bin=22 level=52
+  [OUT ] bin=23 level=56
+  [OUT ] bin=24 level=52
+  [OUT ] bin=25 level=60
+  [OUT ] bin=26 level=60
+  [OUT ] bin=27 level=52
+  [OUT ] bin=28 level=56
+  [OUT ] bin=29 level=52
+  [OUT ] bin=30 level=52
+  [OUT ] bin=31 level=52
+  [INFO] max=63 covered=32/32
+  [PASS] 32 ������������������������������������������������
+== 静音：整帧幅度必须归零 ==
+  [OUT ] bin=0 level=0
+  [PASS] 409��������������������������������������������
+  [OUT ] bin=1 level=0
+  [OUT ] bin=2 level=0
+  [OUT ] bin=3 level=0
+  [OUT ] bin=4 level=0
+  [OUT ] bin=5 level=0
+  [OUT ] bin=6 level=0
+  [OUT ] bin=7 level=0
+  [OUT ] bin=8 level=0
+  [OUT ] bin=9 level=0
+  [OUT ] bin=10 level=0
+  [OUT ] bin=11 level=0
+  [OUT ] bin=12 level=0
+  [OUT ] bin=13 level=0
+  [OUT ] bin=14 level=0
+  [OUT ] bin=15 level=0
+  [OUT ] bin=16 level=0
+  [OUT ] bin=17 level=0
+  [OUT ] bin=18 level=0
+  [OUT ] bin=19 level=0
+  [OUT ] bin=20 level=0
+  [OUT ] bin=21 level=0
+  [OUT ] bin=22 level=0
+  [OUT ] bin=23 level=0
+  [OUT ] bin=24 level=0
+  [OUT ] bin=25 level=0
+  [OUT ] bin=26 level=0
+  [OUT ] bin=27 level=0
+  [OUT ] bin=28 level=0
+  [OUT ] bin=29 level=0
+  [OUT ] bin=30 level=0
+  [OUT ] bin=31 level=0
+  [PASS] ��������������������������� ������������
+  [PASS] ������������ 32 ������������������ 0
+TB spectrum: PASS=12 FAIL=0
+*** tb_spectrum_goertzel ALL PASS ***
+sim/tb_spectrum_goertzel.v:196: $finish called at 188902640000 (1ps)

@@ -1,0 +1,30 @@
+[CFG ] SecPerClus=8  文件=1281 字节  需 3 扇区 / 1 簇
+[PASS]  卡初始化完成 card_ready=1
+[PASS] 卡初始化无错误 card_err=0
+     [BLK] 文件块 1 读完 lba=21
+     [BLK] 文件块 2 读完 lba=22
+     [BLK] 文件块 3 读完 lba=23
+[PASS] ��������������� load_don��������
+[PASS] ������������������ fat_err=0
+[PASS] ��������������� file_found=1
+[PASS] ����������������� loadin��������
+     DBG 读到 255 个写事件，共发起 3 次块读取
+[PASS] 5 个写事件（跨 3 扇区）
+[PASS] ���������������������� 3����
+[PASS] ���������� count=255
+[PASS] ������������ bpm=120
+[PASS] �������������� 1����
+[PASS] 事件地址 0..254 严格递增
+[PASS] �事件音符 = 60+(i%24) 全对
+[PASS] ������������������� addr=254
+[PASS] �������������������� note=74
+[PASS] ������������� err_code=0
+[PASS] ���������������� err_count=0
+
+=============================================
+  SD 跨块装载 255 事件：17 PASS / 0 FAIL
+=============================================
+  >>> 全部通过
+sim/tb_sd_multiblock.v:349: $finish called at 2397170000 (1ps)
+sim/tb_sd_multiblock.v:83: Warning: Calling system function $value$plusargs() as a task.
+sim/tb_sd_multiblock.v:83:          The functions return value will be ignored.

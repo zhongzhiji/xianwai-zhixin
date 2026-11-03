@@ -1,0 +1,24 @@
+=== tb_score_capacity: 曲谱容量 64->255 ===
+-- 测试1: 装载 255 事件 --
+  DBG commit_seen=1 accept=0 err=0 imported=1 bpm=240 evt=255 written=0
+  [PASS] comm���������������2������������
+  [PASS] ��������������������
+  [PASS] transpo������������������������
+  [PASS] b������������
+-- 测试2: 深地址写入检查（index 100 / 200）--
+  [PASS] 64（未被 6 位地址截断）
+  [PASS] 8（数组深度已扩到 255）
+-- 测试3: 播放越界检查 --
+     播放中到达的最大 page_index = 31（页 = 8 事件）
+  [PASS] 4 个事件（page_index >= 8）
+-- 测试4: 漏写校验（transport 第二道门）--
+     DBG 协议层 accept=1，transport event_count 255->255，bpm 240->240
+  [PASS] ）—— 说明门在 transport
+  [PASS] ��换曲（event_count 未变）
+  [PASS] ort 拒绝换曲（bpm 未变）
+  [PASS] ��计数器 = 199（少 1 个）
+-- 测试5: 兼容旧的 64 事件用法 --
+  [PASS] count=6��������������������
+=== 结果：PASS=12 FAIL=0 ===
+*** ALL PASS ***
+sim/tb_score_capacity.v:249: $finish called at 264750000 (1ps)

@@ -1,0 +1,2 @@
+PASS=3 FAIL=0 MIDI_ON=2 MIDI_OFF=1
+sim/tb_showcase_midi_score.v:29: $finish called at 1454400000 (1ps)

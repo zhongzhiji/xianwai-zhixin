@@ -1,0 +1,10 @@
+PASS authenticated assets load; initial status is honest preview
+PASS real keyboard hit scores once; unplayed notes miss
+PASS automatic phrasing renders; no human score or hardware input fabrication
+PASS 32 browser voices created and released
+PASS disconnect returns to preview at default JDY-31 baud
+PASS pointer hold survives lease and releases correctly
+PASS gateway releases held note when browser goes offline
+PASS score import blocks conflicting game input
+PASS phone layout has no horizontal overflow
+TOTAL 9 PASS

@@ -1,0 +1,48 @@
+{
+  "title": "I Really Want to Stay at Your House",
+  "display_title": "留在你家",
+  "checked_on": "2026-10-10",
+  "source_score": "User-supplied two-page guitar staff/TAB, bars 1 through 48, tempo 125 BPM",
+  "scope": "Monophonic transformation of all 48 bars in that particular arrangement; not the separate 167-bar piano arrangement and not the complete commercial audio recording",
+  "output_file": "stay_at_your_house.json",
+  "output_sha256": "597a6353e33fdd4013fa9c918852e9f8e454cc1c00adae2bd2b34ec1561c3464",
+  "manual_checks": [
+    "Read both original full-resolution source photographs; enlarged cropped inspection copies were used without modifying the source photographs.",
+    "Each printed TAB fret was assigned its actual string, not a guessed B-string assignment. Standard guitar sounding pitches are E2=40, A2=45, D3=50, G3=55, B3=59 and E4=64.",
+    "Bar 1 is G-string 6, G-string 6, B-string 7: sounding MIDI 61, 61, 66. Bar 2 D-string 8/6 gives 58/56. Bar 12 ends on A-string 9, MIDI54. Bars 40/44 include high E-string 21, MIDI85.",
+    "Bar 20 begins with a tied continuation whose TAB fret is omitted; the staff shows six note heads, not only the five printed TAB numbers.",
+    "Bar 23 begins with a dotted-half tied continuation of bar 22's G-string fret 8; its last quarter note is D-string fret 11, not G-string fret 11.",
+    "Bar 12's three sixteenth-note triplet attacks use two ticks each. Bar 43's dotted-eighth pair uses nine ticks each. Both preserve the 48-tick bar total.",
+    "Equal-pitch sustain ties were marked explicitly. The different-pitch legato curves in bars 12, 27 and 28 are not merged as sustain ties.",
+    "The bar-48 final note is a dotted half, following a quarter note; the final bar is a full 4/4 bar, not a pickup or truncated ending."
+  ],
+  "validation": {
+    "bar_numbers": "contiguous 1..48",
+    "bar_count": 48,
+    "ticks_per_quarter": 12,
+    "ticks_per_bar": 48,
+    "total_ticks": 2304,
+    "source_events": 253,
+    "explicit_sustain_ties": 14,
+    "events_after_explicit_tie_merge": 239,
+    "pitched_source_events": 215,
+    "rest_source_events": 38,
+    "muted_x_attacks_replaced_by_rests": 21,
+    "minimum_sounding_midi": 54,
+    "maximum_sounding_midi": 85,
+    "bpm": 125,
+    "duration_seconds": 92.16,
+    "bar_duration_errors": [],
+    "tab_pitch_errors": [],
+    "tie_target_errors": [],
+    "playback_range_errors_48_95": []
+  },
+  "deliberate_simplifications": [
+    {"bars":[16],"kind":"slide","decision":"Play the printed destination fret directly, without a pitch glide."},
+    {"bars":[28,42],"kind":"full bend/release","decision":"Keep the nominal fretted attack pitch and printed duration; do not invent the unquantified continuous bend curve."},
+    {"bars":[31],"kind":"artificial harmonic","decision":"Use nominal G-string fret 11 (MIDI66); the touched fret/partial is not specified clearly enough to assert a different harmonic pitch."},
+    {"bars":[33,34,35,36,37,38,39],"kind":"muted x notes","decision":"Preserve rhythm with rests in a pitched monophonic arrangement; do not turn muted attacks or lower accompaniment into melody notes."},
+    {"bars":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],"kind":"instrument performance","decision":"The FPGA timbre supplies the selected synthesized instrument sound; this data is not a vocal track, multitrack accompaniment or the original master recording."}
+  ],
+  "distribution_note": "The score was supplied by the user for transformation. The package should include only the resulting project data and these source identifiers, not redistribute the original photographs or present the arrangement as a public-domain composition. No lyrics are transcribed."
+}

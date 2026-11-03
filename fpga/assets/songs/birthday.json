@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "title": "生日快乐",
+  "display_title": "生日快乐（16键C大调）",
+  "bpm": 116,
+  "ticks_per_quarter": 12,
+  "time_signature": [
+    3,
+    4
+  ],
+  "source_type": "hand_arranged_16key",
+  "events": [
+    {
+      "note": 67,
+      "ticks": 6
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 69,
+      "ticks": 12
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 72,
+      "ticks": 12
+    },
+    {
+      "note": 71,
+      "ticks": 24
+    },
+    {
+      "note": 67,
+      "ticks": 6
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 69,
+      "ticks": 12
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 74,
+      "ticks": 12
+    },
+    {
+      "note": 72,
+      "ticks": 24
+    },
+    {
+      "note": 67,
+      "ticks": 6
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 79,
+      "ticks": 12
+    },
+    {
+      "note": 76,
+      "ticks": 12
+    },
+    {
+      "note": 72,
+      "ticks": 12
+    },
+    {
+      "note": 71,
+      "ticks": 12
+    },
+    {
+      "note": 69,
+      "ticks": 24
+    },
+    {
+      "note": 77,
+      "ticks": 6
+    },
+    {
+      "note": 77,
+      "ticks": 12
+    },
+    {
+      "note": 76,
+      "ticks": 12
+    },
+    {
+      "note": 72,
+      "ticks": 12
+    },
+    {
+      "note": 74,
+      "ticks": 12
+    },
+    {
+      "note": 72,
+      "ticks": 24
+    }
+  ]
+}

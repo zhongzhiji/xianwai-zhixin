@@ -1,0 +1,21 @@
+[PASS] Note ������ 3����
+[PASS] Note On������������ 60 (C4)
+[PASS] Note On��������� 64
+[PASS] Running Status #1 ��������� 62
+[PASS] Running Status ��������� 80
+[PASS] Note On������������ 67 (G4)
+[PASS] Note On#�������� 100
+[PASS] Note O������ 2����
+[PASS] Note Off#0 ��������� 60
+[PASS] vel=������������ Note Off 65
+[PASS] ������������������ sustain=0
+[PASS] ���������� CC1 = 127
+[PASS] ���������������� = +8191
+[PASS] ��������������� = 10
+[PASS] ������������ err_count=0
+
+=============================================
+  MIDI 接收仿真：15 PASS / 0 FAIL
+=============================================
+  >>> 全部通过
+sim/tb_midi_rx.v:153: $finish called at 11884390000 (1ps)

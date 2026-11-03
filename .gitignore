@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.vvp
+*.vcd
+*.fst
+*.fs
+*.gprj.user
+**/impl/
+**/sim/out/
+test-results/
+.env
+.env.*
+*.lic
+*.key
+*.ekey
+node_modules/

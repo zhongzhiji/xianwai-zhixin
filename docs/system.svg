@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#12273d"/><stop offset="1" stop-color="#080f1d"/></linearGradient><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#63ebd2" stroke-width="2"/></marker></defs>
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#eaf5ff">
+<text x="100" y="100" font-size="20" fill="#63ebd2" letter-spacing="5">STRING BEYOND / SYSTEM OVERVIEW</text>
+<text x="100" y="176" font-size="52" font-weight="bold">弦外之芯 蓝牙接入与音游展示</text>
+<text x="100" y="230" font-size="24" fill="#a6b9cf">曲谱和音符按事件传输，板上音频由 FPGA 实时合成。</text>
+<rect x="100" y="285" width="1720" height="345" rx="24" fill="#142439" stroke="#3c526b"/>
+<text x="135" y="338" font-size="25" fill="#63ebd2">实际硬件链路</text><text x="490" y="337" font-size="20" fill="#b4c4d6">需要配对与板上验证　·　无需 CP2102 参与无线运行</text>
+<g fill="#203750" stroke="#53728b"><rect x="140" y="390" width="300" height="142" rx="12"/><rect x="575" y="390" width="300" height="142" rx="12"/><rect x="1010" y="390" width="300" height="142" rx="12"/><rect x="1435" y="390" width="340" height="142" rx="12"/></g>
+<g text-anchor="middle"><text x="290" y="440" font-size="30">手机 H5</text><text x="290" y="487" font-size="20" fill="#b4c4d6">选曲 / 真实按键</text><text x="725" y="440" font-size="30">电脑网关</text><text x="725" y="487" font-size="20" fill="#b4c4d6">Windows 出站 SPP COM</text><text x="1155" y="440" font-size="30">JDY-31</text><text x="1155" y="487" font-size="20" fill="#b4c4d6">经典蓝牙转 UART</text><text x="1605" y="440" font-size="30">Tang Mega 138K</text><text x="1605" y="487" font-size="20" fill="#b4c4d6">曲谱解析 / 音符合成</text></g>
+<g stroke="#63ebd2" stroke-width="3" marker-end="url(#arrow)"><path d="M454 460H552"/><path d="M889 460H988"/><path d="M1314 460H1413"/></g>
+<g text-anchor="middle" fill="#a6b9cf" font-size="18"><text x="503" y="423">Wi-Fi</text><text x="938" y="423">SPP</text><text x="1368" y="423">9600</text></g>
+<text x="140" y="588" font-size="21" fill="#d7e4ee">JDY TXD → J22.12 / M26　　GND 共地　　TXD 为 3.3 V 逻辑　　VCC 按模块实物额定电压确认</text>
+<rect x="100" y="665" width="1720" height="246" rx="24" fill="#142439" stroke="#3c526b"/>
+<text x="135" y="719" font-size="25" fill="#f3cc8d">网页演奏展示</text><text x="490" y="718" font-size="20" fill="#b4c4d6">本地浏览器合成与判定　·　不冒充硬件实测</text>
+<text x="150" y="786" font-size="28">真人输入 → 时窗判定 → 得分与连击</text><text x="1010" y="786" font-size="28">自动演奏 → 自然力度与时差 → 不计分</text>
+<text x="150" y="851" font-size="22" fill="#a6b9cf">浏览器试听：四种音色 / 力度 / 滑音 / 颤音 / 4 至 32 个独立振荡器</text>
+<text x="100" y="981" font-size="23" fill="#b4c4d6">FPGA 自动演示：第 13 段滑音 · 第 14 段颤音 · 第 15–18 段 4 / 8 / 16 / 32 声部</text>
+<text x="100" y="1028" font-size="20" fill="#f3cc8d">串口打开不等于无线已验证。当前无 FPGA 回传确认；导入结果以板上状态及实际音频为准。</text>
+</g></svg>

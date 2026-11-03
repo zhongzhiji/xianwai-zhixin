@@ -1,0 +1,184 @@
+[
+  {
+    "index": 0,
+    "label": "WELCOME",
+    "title": "作品概览与自动演奏",
+    "seconds": 18,
+    "page": 0
+  },
+  {
+    "index": 1,
+    "label": "EXPRESSION",
+    "title": "同音高力度变化",
+    "seconds": 24,
+    "page": 1
+  },
+  {
+    "index": 2,
+    "label": "NOTE SELECT",
+    "title": "固定力度选音",
+    "seconds": 24,
+    "page": 1
+  },
+  {
+    "index": 3,
+    "label": "FOUR VOICES",
+    "title": "四音和弦逐键释放",
+    "seconds": 24,
+    "page": 1
+  },
+  {
+    "index": 4,
+    "label": "KEYS",
+    "title": "键盘音色三预设",
+    "seconds": 24,
+    "page": 2
+  },
+  {
+    "index": 5,
+    "label": "PLUCK",
+    "title": "拨弦音色三预设",
+    "seconds": 24,
+    "page": 2
+  },
+  {
+    "index": 6,
+    "label": "WIND",
+    "title": "管乐音色三预设",
+    "seconds": 24,
+    "page": 2
+  },
+  {
+    "index": 7,
+    "label": "SYNTH",
+    "title": "合成音色三预设",
+    "seconds": 24,
+    "page": 2
+  },
+  {
+    "index": 8,
+    "label": "FX BYPASS",
+    "title": "效果器旁路对照",
+    "seconds": 16,
+    "page": 4
+  },
+  {
+    "index": 9,
+    "label": "FX ECHO",
+    "title": "回声",
+    "seconds": 20,
+    "page": 4
+  },
+  {
+    "index": 10,
+    "label": "FX CHORUS",
+    "title": "合唱",
+    "seconds": 20,
+    "page": 4
+  },
+  {
+    "index": 11,
+    "label": "FX REVERB",
+    "title": "混响",
+    "seconds": 20,
+    "page": 4
+  },
+  {
+    "index": 12,
+    "label": "GLIDE",
+    "title": "连续滑音",
+    "seconds": 24,
+    "page": 4
+  },
+  {
+    "index": 13,
+    "label": "VIBRATO",
+    "title": "颤音",
+    "seconds": 24,
+    "page": 4
+  },
+  {
+    "index": 14,
+    "label": "TEST 04",
+    "title": "四声部频谱",
+    "seconds": 20,
+    "page": 5
+  },
+  {
+    "index": 15,
+    "label": "TEST 08",
+    "title": "八声部频谱",
+    "seconds": 20,
+    "page": 5
+  },
+  {
+    "index": 16,
+    "label": "TEST 16",
+    "title": "十六声部频谱",
+    "seconds": 20,
+    "page": 5
+  },
+  {
+    "index": 17,
+    "label": "TEST 32",
+    "title": "三十二声部频谱",
+    "seconds": 25,
+    "page": 5
+  },
+  {
+    "index": 18,
+    "label": "WAVE",
+    "title": "实时波形",
+    "seconds": 24,
+    "page": 4
+  },
+  {
+    "index": 19,
+    "label": "SPECTRUM",
+    "title": "旋律频谱",
+    "seconds": 24,
+    "page": 5
+  },
+  {
+    "index": 20,
+    "label": "LISSAJOUS",
+    "title": "主音与伴奏双通道",
+    "seconds": 30,
+    "page": 6
+  },
+  {
+    "index": 21,
+    "label": "SCORE GUIDE",
+    "title": "自动跟谱与下落音符",
+    "seconds": 30,
+    "page": 0
+  },
+  {
+    "index": 22,
+    "label": "SONG LIBRARY",
+    "title": "内置曲库",
+    "seconds": 24,
+    "page": 3
+  },
+  {
+    "index": 23,
+    "label": "UART LOOPBACK",
+    "title": "UART曲谱协议自测",
+    "seconds": 30,
+    "page": 3
+  },
+  {
+    "index": 24,
+    "label": "IMPORTED SCORE",
+    "title": "导入曲谱实时合成",
+    "seconds": 30,
+    "page": 0
+  },
+  {
+    "index": 25,
+    "label": "PHONE UART",
+    "title": "手机网关演示窗口",
+    "seconds": 45,
+    "page": 0
+  }
+]

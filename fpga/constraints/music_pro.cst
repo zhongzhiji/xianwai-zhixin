@@ -1,0 +1,176 @@
+// Tang Mega 138K Pro (GW5AST-138C) 引脚约束
+// 基准：原 score_fsr16_ui.cst（已烧录验证的分配）。相对它有三处改动：
+//   1. 新增 bt_rx(M26)  —— 蓝牙模块 TXD
+//   2. 新增 midi_rx(P23)、kb_row/kb_col —— 钢琴键盘两种方案
+//   3. SD 卡四脚由 PMOD2/J26(B20/A20/C21/B21) 改为底板板载卡槽(D23/D24/H23/B25)
+
+IO_LOC "sys_clk" P16;
+CLOCK_LOC "sys_clk_d" BUFG = CLK;
+CLOCK_LOC "pixel_clk" BUFG = CLK;
+IO_LOC "rst_n" K16;
+IO_LOC "key_play_n" F15;
+IO_LOC "key_timbre_n" G15;
+IO_LOC "key_demo_n" G16;
+
+IO_LOC "lcd_clk" H21;
+IO_LOC "lcd_de" A24;
+IO_LOC "lcd_r[0]" K17;
+IO_LOC "lcd_r[1]" J18;
+IO_LOC "lcd_r[2]" H18;
+IO_LOC "lcd_r[3]" G25;
+IO_LOC "lcd_r[4]" J19;
+IO_LOC "lcd_r[5]" H19;
+IO_LOC "lcd_g[0]" G20;
+IO_LOC "lcd_g[1]" G21;
+IO_LOC "lcd_g[2]" G22;
+IO_LOC "lcd_g[3]" F22;
+IO_LOC "lcd_g[4]" K15;
+IO_LOC "lcd_g[5]" J16;
+IO_LOC "lcd_b[0]" M16;
+IO_LOC "lcd_b[1]" M17;
+IO_LOC "lcd_b[2]" F18;
+IO_LOC "lcd_b[3]" F19;
+IO_LOC "lcd_b[4]" G19;
+IO_LOC "lcd_b[5]" F20;
+
+IO_LOC "led_n[0]" J14;
+IO_LOC "led_n[1]" R26;
+
+// 压力板 UART（原有，不动）
+IO_LOC "pressure_rx" C24;
+IO_PORT "pressure_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// 蓝牙模块 TXD —— PMOD0(J22) 第 12 脚，3.3V LVCMOS
+// 注意：模块 TXD 空载电压必须 <= 3.3V，5V 电平会打坏该 IO。
+IO_LOC "bt_rx" M26;
+IO_PORT "bt_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// 触摸载板 TouchCarrier R11 —— PMOD1 / J24 的 5/6/7 脚
+// ⚠️ J5 是 5 芯而 J24 的 1/2 都是 3V3、3/4 都是 GND，
+//    必须按 1→1、2→3、3→5、4→6、5→7 逐根飞线，排线直插会短路 3V3 到 GND。
+//    详见 docs/01_触摸载板接线与使用指南.md 第 0 节。
+IO_LOC "touch_scl" H14;
+IO_PORT "touch_scl" IO_TYPE=LVCMOS33 PULL_MODE=NONE OPEN_DRAIN=ON DRIVE=4;
+IO_LOC "touch_sda" H15;
+IO_PORT "touch_sda" IO_TYPE=LVCMOS33 PULL_MODE=NONE OPEN_DRAIN=ON DRIVE=4;
+IO_LOC "touch_irq_n" L17;
+IO_PORT "touch_irq_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// microSD 卡 SPI —— 【改用底座板载卡槽，不再需要外接 SD 模块】
+//
+// 引脚取自 Sipeed 官方示例仓库 audio/audio_music/src/audio.cst（同一块
+// Tang Mega 138K Pro Dock / 4071f3 底板：该文件的 HP_DIN=G24、HP_WS=F24、
+// HP_BCK=E22 与本工程音频脚完全一致，可交叉验证底板版本对得上）。
+//
+//   sd_sclk = D23    sd_mosi = D24    sd_miso = H23    sd_csn = B25
+//   （对应顶层端口名 sd_sclk / sd_mosi / sd_miso / sd_csn）
+//
+// 四脚均为 LVCMOS33（3.3V），与底座卡槽直连，无需外接模块、无需电平转换。
+// 原 PMOD2/J26 的 B20/A20/C21/B21 因此释放，可作备用 IO。
+//
+// ⚠️ 若你们的底板不是 4071f3，请先对照对应版本原理图核对这 4 个脚，
+//    不同版本底板的 SD 卡槽走线可能不同。
+IO_LOC "sd_sclk" D23;
+IO_PORT "sd_sclk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "sd_mosi" D24;
+IO_PORT "sd_mosi" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "sd_miso" H23;
+IO_PORT "sd_miso" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "sd_csn" B25;
+IO_PORT "sd_csn" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+// ---------------------------------------------------------------------------
+// 钢琴键盘 —— 方案 A：MIDI 1.0 输入（5 针 DIN 经 6N138 光耦，只占 1 根 IO）
+//   40P 排针 J23 物理 9 脚 = P23
+//   ⚠️ 5 针 DIN 的 MIDI 是电流环，绝对不能直接接 FPGA；必须经过 6N138
+//      光耦转成 3.3V 逻辑（见 docs/03_钢琴键盘与蓝牙模块方案.md 第 2 节）。
+//
+//   ⚠️ 为什么不用 PMOD0/J22：本封装（GW5AST-LV138FPG676AC1/I0）下 J22 的
+//      5..11 脚（R17/T24/R16/L24/L22/N17/N18）是 CPU/SSPI 专用脚，
+//      PnR 会直接报 PR2017「dedicated pin」而失败，只有物理 12 脚(M26)可用。
+//      所以 bt_rx 独占 J22.12，其它扩展一律走 PMOD1/PMOD2 与 40P 排针。
+IO_LOC "midi_rx" P23;
+IO_PORT "midi_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// ---------------------------------------------------------------------------
+// 钢琴键盘 —— 方案 B：8×8 行列矩阵（拆掉电子琴 COB 主控后直连键盘总成）
+//   行 = 推挽输出，同一时刻只拉低一根；列 = 带上拉的输入，按下被拉低。
+//   不接键盘时这些脚悬空即可，不影响其它功能。
+//   行 row[0..3] = PMOD1/J24 物理 8/9/10/12（5/6/7 已给触摸载板，11 给压力 UART）
+//      row[4..7] = PMOD2/J26 物理 5..8（J26 的 9..12 现已释放，可作备用 IO：
+//                  SD 卡已改走底板板载卡槽 D23/D24/H23/B25）
+IO_LOC "kb_row[0]" L18;
+IO_LOC "kb_row[1]" E25;
+IO_LOC "kb_row[2]" D25;
+IO_LOC "kb_row[3]" B24;
+IO_LOC "kb_row[4]" A17;
+IO_LOC "kb_row[5]" A18;
+IO_LOC "kb_row[6]" B19;
+IO_LOC "kb_row[7]" A19;
+//   列 col[0..7] = 40P 排针 J23 物理 1..8
+//   ⚠️ J23 物理 11 脚是 +5V、12 脚是 GND，绝对不能当成 GPIO 接键盘线。
+IO_LOC "kb_col[0]" U16;
+IO_LOC "kb_col[1]" V16;
+IO_LOC "kb_col[2]" U15;
+IO_LOC "kb_col[3]" V17;
+IO_LOC "kb_col[4]" W21;
+IO_LOC "kb_col[5]" Y21;
+IO_LOC "kb_col[6]" P21;
+IO_LOC "kb_col[7]" U17;
+
+IO_PORT "kb_row[0]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[1]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[2]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[3]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[4]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[5]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[6]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_row[7]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "kb_col[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[5]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[6]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "kb_col[7]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "hp_bck" E22;
+IO_LOC "hp_ws" F24;
+IO_LOC "hp_din" G24;
+IO_LOC "pa_en" H17;
+
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_PORT "rst_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "key_play_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "key_timbre_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "key_demo_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_PORT "lcd_clk" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_de" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[0]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[1]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[2]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[3]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[4]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_r[5]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[0]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[1]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[2]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[3]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[4]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_g[5]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[0]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[1]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[2]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[3]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[4]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "lcd_b[5]" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+
+IO_PORT "led_n[0]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE;
+IO_PORT "led_n[1]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE;
+
+IO_PORT "hp_bck" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "hp_ws" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "hp_din" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "pa_en" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=DOWN;

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AST-138C" pn="GW5AST-LV138FPG676AC1/I0">gw5ast138c-003</Device>
+    <FileList>
+        <File path="rtl/showcase_director.v" type="file.verilog" enable="1" />
+        <File path="rtl/showcase_uart_rom.v" type="file.verilog" enable="1" />
+        <File path="rtl/top_music_pro.v" type="file.verilog" enable="1" />
+        <File path="rtl/reset_sync.v" type="file.verilog" enable="1" />
+        <File path="rtl/lcd_pll.v" type="file.verilog" enable="1" />
+        <File path="rtl/bus_snapshot_cdc.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_display_core.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_transport.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_note_matcher.v" type="file.verilog" enable="1" />
+        <File path="rtl/user_song_rom.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_ui_renderer.v" type="file.verilog" enable="1" />
+        <File path="rtl/pressure_display_mapper.v" type="file.verilog" enable="1" />
+        <File path="rtl/ui_action_button.v" type="file.verilog" enable="1" />
+        <File path="rtl/ui_volume_control.v" type="file.verilog" enable="1" />
+        <File path="rtl/ui_text_font.v" type="file.verilog" enable="1" />
+        <File path="rtl/ui_view_state.v" type="file.verilog" enable="1" />
+        <!-- 实时波形示波器：48kHz 侧采样前端 -->
+        <File path="rtl/audio_wave_scope.v" type="file.verilog" enable="1" />
+        <!-- 实时频谱（Goertzel 32 频点）与双通道李萨如采样前端 -->
+        <File path="rtl/audio_spectrum_goertzel.v" type="file.verilog" enable="1" />
+        <File path="rtl/audio_lissajous_scope.v" type="file.verilog" enable="1" />
+        <File path="rtl/sd_wav_player.v" type="file.verilog" enable="1" />
+        <File path="rtl/bt_uart_link.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_loader_uart.v" type="file.verilog" enable="1" />
+        <File path="rtl/rhythm_judge.v" type="file.verilog" enable="1" />
+        <File path="rtl/bin2bcd.v" type="file.verilog" enable="1" />
+        <!-- 触摸载板 TouchCarrier R11：双 MPR121 共享 I2C -->
+        <File path="rtl/i2c_register_master.v" type="file.verilog" enable="1" />
+        <File path="rtl/mpr121_sequencer.v" type="file.verilog" enable="1" />
+        <File path="rtl/touch_carrier.v" type="file.verilog" enable="1" />
+        <!-- SD 卡曲谱导入：SPI + FAT32 + 复用装载核心 -->
+        <File path="rtl/spi_master.v" type="file.verilog" enable="1" />
+        <File path="rtl/sd_card_ctrl.v" type="file.verilog" enable="1" />
+        <File path="rtl/score_loader_core.v" type="file.verilog" enable="1" />
+        <File path="rtl/sd_score_loader.v" type="file.verilog" enable="1" />
+        <!-- 钢琴键盘：方案 A MIDI 1.0 接收；方案 B 8x8 行列矩阵扫描 + 和弦提取 -->
+        <File path="rtl/midi_uart_rx.v" type="file.verilog" enable="1" />
+        <File path="rtl/key_matrix_scan.v" type="file.verilog" enable="1" />
+        <File path="rtl/chord_from_keys.v" type="file.verilog" enable="1" />
+        <File path="rtl/pitch_bend_apply.v" type="file.verilog" enable="1" />
+        <File path="audio/src/clk_gen.v" type="file.verilog" enable="1" />
+        <File path="audio/src/i2s_tx.v" type="file.verilog" enable="1" />
+        <File path="audio/src/uart_rx.v" type="file.verilog" enable="1" />
+        <File path="audio/src/wax_frame.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fsr_gate.v" type="file.verilog" enable="1" />
+        <File path="audio/src/freq_map.v" type="file.verilog" enable="1" />
+        <File path="audio/src/chromatic_audition.v" type="file.verilog" enable="1" />
+        <File path="audio/src/vib_lfo.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fsr16_engine.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fsr16_audio_wrapper.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fsr16_uart_engine.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fsr32_engine.v" type="file.verilog" enable="1" />
+        <File path="audio/src/fx_rack.v" type="file.verilog" enable="1" />
+        <File path="audio/src/audio_master_volume.v" type="file.verilog" enable="1" />
+        <File path="audio/src/audio_output_filter.v" type="file.verilog" enable="1" />
+        <File path="audio/src/score_accompaniment.v" type="file.verilog" enable="1" />
+        <File path="constraints/music_pro.cst" type="file.cst" enable="1" />
+        <File path="constraints/clock.sdc" type="file.sdc" enable="1" />
+    </FileList>
+</Project>

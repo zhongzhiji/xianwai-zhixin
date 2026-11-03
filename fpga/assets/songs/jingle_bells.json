@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "title": "铃儿响叮当",
+  "display_title": "铃儿响叮当（16键C大调）",
+  "bpm": 132,
+  "ticks_per_quarter": 12,
+  "time_signature": [
+    4,
+    4
+  ],
+  "source_type": "hand_arranged_16key",
+  "events": [
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 24
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 24
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 60,
+      "ticks": 18
+    },
+    {
+      "note": 62,
+      "ticks": 6
+    },
+    {
+      "note": 64,
+      "ticks": 42
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 65,
+      "ticks": 18
+    },
+    {
+      "note": 65,
+      "ticks": 6
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 6
+    },
+    {
+      "note": 64,
+      "ticks": 6
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 62,
+      "ticks": 12
+    },
+    {
+      "note": 62,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 62,
+      "ticks": 24
+    },
+    {
+      "note": 67,
+      "ticks": 24
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 24
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 24
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 60,
+      "ticks": 18
+    },
+    {
+      "note": 62,
+      "ticks": 6
+    },
+    {
+      "note": 64,
+      "ticks": 42
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 65,
+      "ticks": 18
+    },
+    {
+      "note": 65,
+      "ticks": 6
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 12
+    },
+    {
+      "note": 64,
+      "ticks": 6
+    },
+    {
+      "note": 64,
+      "ticks": 6
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 67,
+      "ticks": 12
+    },
+    {
+      "note": 65,
+      "ticks": 12
+    },
+    {
+      "note": 62,
+      "ticks": 12
+    },
+    {
+      "note": 60,
+      "ticks": 42
+    }
+  ]
+}

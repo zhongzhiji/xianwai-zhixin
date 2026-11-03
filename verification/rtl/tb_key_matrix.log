@@ -1,0 +1,16 @@
+[PASS] ������������������������
+[PASS] �������� key����� key_state[0]=1
+[PASS] ������������������ 0
+[PASS] ���������� key_valid
+[PASS] key_index���������� 0
+[PASS] ��键和弦：key0/9/16 全为 1
+[PASS] �键同时按下时 ghost_warn=1
+[PASS] ������� key9����������������
+[PASS] key0���� key������������
+[PASS] ��������������� key_stat��������
+[PASS] ghost_warn ������������
+[PASS] 行驱动恒为单根低有效
+=====================================
+  key_matrix_scan: 全部用例通过
+=====================================
+sim/tb_key_matrix.v:124: $finish called at 258990000 (1ps)

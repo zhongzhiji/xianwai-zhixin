@@ -1,0 +1,24 @@
+=== tb_touch_carrier: dual MPR121 bus arbitration ===
+  PASS: both MPR121 online
+  PASS: slave A got writes
+  PASS: slave B got writes
+  PASS: no fault after init
+  PASS: MPR_A ELE0 -> keys[0]
+  PASS: MPR_A ELE11 -> keys[11]
+  PASS: keys[0] released
+  PASS: MPR_B ELE0 -> keys[12]
+  PASS: MPR_B ELE3 -> keys[15]
+  PASS: MPR_B ELE4 -> strings[0]
+  PASS: keys[12] released
+  PASS: MPR_B ELE10 -> bend
+  PASS: MPR_B ELE11 -> vib
+  PASS: bend released
+  PASS: multi-key A[3:0]
+  PASS: multi-key [13:12]
+  PASS: 16 keys total map
+  PASS: keys cleared after drop
+  PASS: strings cleared after drop
+  PASS: bend/vib cleared
+=== errors = 0 ===
+TOUCH CARRIER CHECK PASS
+sim/tb_touch_carrier.v:190: $finish called at 45829830000 (1ps)

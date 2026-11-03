@@ -1,0 +1,18 @@
+[PASS] SPEC����������������
+[PASS] SPEC display_d��������
+[PASS] SPE��������������������
+[PASS] SPE��������������������
+[PASS] SPE��������������������
+[PASS] LIS��������������������
+[PASS] LI������������������������
+[PASS] LIS��������������������
+[PASS] rightmost Lissajous column visible
+[PASS] old trace clears without any new mailbox
+[PASS]  full-scale sample has high-level colour
+[PASS] aveform is magnified without signed wrap
+[PASS] ve display gain saturates positive peaks
+[PASS] ains stage digits beyond character eight
+[PASS] button help retains its first character
+[PASS] button help retains its last character
+===== 全部用例通过 =====
+sim/tb_display_integrity.v:161: $finish called at 19320000 (1ps)

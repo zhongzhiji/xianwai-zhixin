@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "title": "欢乐颂",
+  "display_title": "欢乐颂（贝多芬）",
+  "composer_or_original_performer": "Ludwig van Beethoven",
+  "arrangement": "C 大调主旋律，单声部演示，附点节奏保留",
+  "bpm": 110,
+  "ticks_per_quarter": 12,
+  "time_signature": [4, 4],
+  "events": [
+    {"note": 64, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 67, "ticks": 12},
+    {"note": 67, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 62, "ticks": 12},
+    {"note": 60, "ticks": 12}, {"note": 60, "ticks": 12}, {"note": 62, "ticks": 12}, {"note": 64, "ticks": 12},
+    {"note": 64, "ticks": 18}, {"note": 62, "ticks": 6},  {"note": 62, "ticks": 24},
+    {"note": 64, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 67, "ticks": 12},
+    {"note": 67, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 62, "ticks": 12},
+    {"note": 60, "ticks": 12}, {"note": 60, "ticks": 12}, {"note": 62, "ticks": 12}, {"note": 64, "ticks": 12},
+    {"note": 62, "ticks": 18}, {"note": 60, "ticks": 6},  {"note": 60, "ticks": 24}
+  ]
+}

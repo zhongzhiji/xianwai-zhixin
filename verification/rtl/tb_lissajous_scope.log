@@ -1,0 +1,30 @@
+=== tb_lissajous_scope: dual-channel Lissajous frontend ===
+  PASS  T1 reset: x=0
+  PASS  T1 reset: y=0
+  PASS  T1 reset: toggle=0
+  PASS  T1 reset: quiet=0
+  PASS  T2 x=72 at pcm_x=+16384
+  PASS  T2 y=48 (centre) at pcm_y=0
+  PASS  T3 x=24 at pcm_x=-16384
+  PASS  T4 y=95 at pcm_y=+32767
+  PASS  T4 y=0 at pcm_y=-32768
+  PASS  X positive full-scale fits 96 columns
+  PASS  X negative full-scale reaches column 0
+   [dbg] T5: pulses=40 points=10
+  PASS  T5 decim: 40 beats -> 10 pts
+  PASS  T6 quiet=1 after 260 silent points
+  PASS  T6 quiet drops as soon as acc sounds
+  PASS  T7 muted: no new point
+  PASS  T7 muted: quiet reported
+   [dbg] T8: x 3..91  y 3..91
+  PASS  T8 x span > 60 (real X excursion)
+  PASS  T8 y span > 30 (real Y excursion)
+  PASS  T8 quadrant 1 occupied
+  PASS  T8 quadrant 2 occupied
+  PASS  T8 quadrant 3 occupied
+  PASS  T8 quadrant 4 occupied
+  PASS  small input uses display-only gain
+----------------------------------------
+  PASS=23  FAIL=0
+  *** tb_lissajous_scope ALL PASS ***
+sim/tb_lissajous_scope.v:190: $finish called at 283551000 (1ps)

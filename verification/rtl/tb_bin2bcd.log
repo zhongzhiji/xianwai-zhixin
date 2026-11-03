@@ -1,0 +1,15 @@
+[PASS] 0 -> BCD 0
+[PASS] 7 -> BCD 7
+[PASS] 42 -> BCD 42
+[PASS] 999999 -> BCD 999999
+[PASS] 99999��������������������
+[PASS] 100000 -> BCD 100000
+[PASS] 16777215 -> BCD 16777215
+[PASS] done ������������
+[PASS] don����� bcd = 1234
+[PASS] ��最后一次 start 的值 8888
+[PASS] ����������� bcd ������������
+
+===== 全部用例通过 =====
+
+sim/tb_bin2bcd.v:133: $finish called at 6350000 (1ps)

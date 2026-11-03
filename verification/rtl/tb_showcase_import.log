@@ -1,0 +1,3 @@
+UART 8N1 -> real score_loader_uart: writes=24 commits=1 count=24 bpm=120 errors=0
+PASS=24 FAIL=0
+sim/tb_showcase_import.v:27: $finish called at 202560000 (1ps)

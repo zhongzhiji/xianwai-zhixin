@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "两只老虎",
+  "display_title": "两只老虎",
+  "arrangement": "C 大调，全用四分音符，适合入门演示",
+  "bpm": 120,
+  "ticks_per_quarter": 12,
+  "time_signature": [4, 4],
+  "events": [
+    {"note": 60, "ticks": 12}, {"note": 62, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 60, "ticks": 12},
+    {"note": 60, "ticks": 12}, {"note": 62, "ticks": 12}, {"note": 64, "ticks": 12}, {"note": 60, "ticks": 12},
+    {"note": 64, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 67, "ticks": 24},
+    {"note": 64, "ticks": 12}, {"note": 65, "ticks": 12}, {"note": 67, "ticks": 24},
+    {"note": 67, "ticks": 6}, {"note": 69, "ticks": 6}, {"note": 67, "ticks": 6}, {"note": 64, "ticks": 6}, {"note": 60, "ticks": 12},
+    {"note": 67, "ticks": 6}, {"note": 69, "ticks": 6}, {"note": 67, "ticks": 6}, {"note": 64, "ticks": 6}, {"note": 60, "ticks": 12},
+    {"note": 62, "ticks": 12}, {"note": 67, "ticks": 12}, {"note": 60, "ticks": 24},
+    {"note": 62, "ticks": 12}, {"note": 67, "ticks": 12}, {"note": 60, "ticks": 24}
+  ]
+}

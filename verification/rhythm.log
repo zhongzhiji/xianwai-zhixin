@@ -1,0 +1,8 @@
+PASS accurate input gives exact first score, combo and best
+PASS wrong lane and late notes do not score
+PASS a note can be judged only once
+PASS early input outside window cannot pre-hit
+PASS automatic has expressive timing and velocity but never human stats
+PASS miss breaks combo; rest never counts as miss
+PASS tempo and durations determine note positions
+TOTAL 7 PASS
