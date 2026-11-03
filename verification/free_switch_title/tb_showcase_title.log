@@ -1,0 +1,6 @@
+PASS title on all 7 pages / 2 auto states / 3 practice states
+PASS lower status retains playing/paused/live/silent
+PASS non-showcase titles unchanged
+PASS TEST INPUT stage footer preserved
+PASS actual RTL header pixel capture 140x62
+sim/tb_showcase_title.v:135: $finish called at 1417251000 (1ps)

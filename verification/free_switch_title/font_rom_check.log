@@ -1,0 +1,2 @@
+PASS: 40 glyph rows and 2 out-of-range rows through synchronous ROM
+output/free_switch_label_20261103/tb_free_switch_font.v:49: $finish called at 426000 (1ps)

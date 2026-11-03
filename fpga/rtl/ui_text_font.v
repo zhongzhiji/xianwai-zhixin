@@ -293,6 +293,8 @@ module ui_text_font #(parameter ADDRESS_PIPELINE=0) (
             16'h9891: glyph_index=9'd274;
             16'h98CE: glyph_index=9'd275;
             16'h9996: glyph_index=9'd276;
+            16'h7531: glyph_index=9'd277;
+            16'h6362: glyph_index=9'd278;
             default: glyph_index=9'd0;
         endcase
     end
@@ -4313,6 +4315,46 @@ module ui_text_font #(parameter ADDRESS_PIPELINE=0) (
         glyph_rows[5536] = 40'h01EAAAAB80;
         glyph_rows[5537] = 40'h01EAAAAB80;
         glyph_rows[5538] = 40'h0180000240;
+        glyph_rows[5540] = 40'h0000000000;
+        glyph_rows[5541] = 40'h0000280000;
+        glyph_rows[5542] = 40'h00002C0000;
+        glyph_rows[5543] = 40'h0000280000;
+        glyph_rows[5544] = 40'h02AABEAA80;
+        glyph_rows[5545] = 40'h07FFFFFFD0;
+        glyph_rows[5546] = 40'h07402800D0;
+        glyph_rows[5547] = 40'h07402801D0;
+        glyph_rows[5548] = 40'h07402801D0;
+        glyph_rows[5549] = 40'h07402800D0;
+        glyph_rows[5550] = 40'h07EABEABD0;
+        glyph_rows[5551] = 40'h07AABEAAD0;
+        glyph_rows[5552] = 40'h07402800D0;
+        glyph_rows[5553] = 40'h07402801D0;
+        glyph_rows[5554] = 40'h07402800D0;
+        glyph_rows[5555] = 40'h07402801D0;
+        glyph_rows[5556] = 40'h07FFFFFFD0;
+        glyph_rows[5557] = 40'h07555555D0;
+        glyph_rows[5558] = 40'h0100000040;
+        glyph_rows[5559] = 40'h0000000000;
+        glyph_rows[5560] = 40'h0000000000;
+        glyph_rows[5561] = 40'h01800A0000;
+        glyph_rows[5562] = 40'h02C01D0000;
+        glyph_rows[5563] = 40'h02803FFF40;
+        glyph_rows[5564] = 40'h1AE4B55B00;
+        glyph_rows[5565] = 40'h1BE9D01D00;
+        glyph_rows[5566] = 40'h02C3957940;
+        glyph_rows[5567] = 40'h02C1FFFFD0;
+        glyph_rows[5568] = 40'h0281C1D0D0;
+        glyph_rows[5569] = 40'h02F9C0C0D0;
+        glyph_rows[5570] = 40'h1FE1C1C0D0;
+        glyph_rows[5571] = 40'h2A81C1C0D0;
+        glyph_rows[5572] = 40'h02CBFFFFF8;
+        glyph_rows[5573] = 40'h02C556E554;
+        glyph_rows[5574] = 40'h02C007B000;
+        glyph_rows[5575] = 40'h02C01E2D00;
+        glyph_rows[5576] = 40'h02C1B80B90;
+        glyph_rows[5577] = 40'h2F8BD001F4;
+        glyph_rows[5578] = 40'h1509000010;
+        glyph_rows[5579] = 40'h0000000000;
     end
     // Optional address register separates Unicode decode from
     // the BSRAM input path. Default preserves the one-edge API.

@@ -1,0 +1,2 @@
+PASS=4 FAIL=0 boot_play=1 note=64
+sim/tb_showcase_transport.v:27: $finish called at 381620000 (1ps)

@@ -1067,7 +1067,9 @@ module score_ui_renderer #(
         text_leaf[7]=cjk_candidate(454,40,cjk_preset_name(instrument,timbre),cjk_preset_length(instrument,timbre),C_WHITE);
         text_leaf[8]=cjk_candidate(558,16,32'h6BCF5206,2,C_MUTED);
         text_leaf[9]=ascii_candidate(558,40,decimal3(bpm),3,C_WHITE);
-        if (demo_mode) text_leaf[10]=cjk_candidate(654,18,64'h81EA52A88BD5542C,4,C_CORAL);
+        // Showcase title only: keep transport, input source and playback status unchanged.
+        if (showcase_active) text_leaf[10]=cjk_candidate(654,18,64'h81EA753152076362,4,demo_mode ? C_CORAL : C_TEAL);
+        else if (demo_mode) text_leaf[10]=cjk_candidate(654,18,64'h81EA52A88BD5542C,4,C_CORAL);
         else if(practice_active)text_leaf[11]=cjk_candidate(654,18,
             practice_mode==2 ? 64'h901097F37EC34E60 : 64'h5B9A65F68DDF8C31,4,C_TEAL);
         else text_leaf[11]=cjk_candidate(654,18,64'h89E664786F14594F,4,C_TEAL);

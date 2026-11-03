@@ -10,14 +10,29 @@
     "sha256": "190a068b6ab8f98668e2972fde2d5b3e946e47e7185cd01f82aa45f045a5f98c"
   },
   {
+    "path": "README.md",
+    "bytes": 4091,
+    "sha256": "effcc4adcd45660d3206e511fc59b56c8fca5170fd0c3140e811dc86d113e8ca"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 606,
+    "sha256": "02765251cd6add3fb5e30f6be8a61746ebc89c52a8e8b607c29eb75ee212f946"
+  },
+  {
     "path": "docs/bluetooth.md",
     "bytes": 8604,
     "sha256": "06f6fd8144b1e97761cba9c4ee2e080dd14f91c40d8b62bb7ae4eee8bf12b9d2"
   },
   {
     "path": "docs/build-status.md",
-    "bytes": 818,
-    "sha256": "59f0a6f4e8c3ab1213b6ea5c506c92e1fbbaa03520fd00120539ea8f1cc3cbfa"
+    "bytes": 778,
+    "sha256": "805c7d25e127af2bf5b61182d2494f1ddbd3516708bb4847f5d9ff17183a75d2"
+  },
+  {
+    "path": "docs/free-switch-title.md",
+    "bytes": 1136,
+    "sha256": "820e1c3a23a2ab17362b46c230d4085252cb9be3f96f02e406002054f737b947"
   },
   {
     "path": "docs/requirements.md",
@@ -225,6 +240,16 @@
     "sha256": "a2e868887786542b52af579403b80eead09e8aff97166287638209034409e287"
   },
   {
+    "path": "fpga/phone_app/JDY31_CP2102_138K接线与调试.md",
+    "bytes": 8604,
+    "sha256": "06f6fd8144b1e97761cba9c4ee2e080dd14f91c40d8b62bb7ae4eee8bf12b9d2"
+  },
+  {
+    "path": "fpga/phone_app/README.md",
+    "bytes": 3610,
+    "sha256": "fe538e229b6ea135733fe764898f46d35fbb3caff0e9966088c0963a3ca45b76"
+  },
+  {
     "path": "fpga/phone_app/game.css",
     "bytes": 5541,
     "sha256": "16e8c2d371957450a671cd8bbfbf8e64af574542ca6628fbda85c34648e5a98b"
@@ -243,16 +268,6 @@
     "path": "fpga/phone_app/index.html",
     "bytes": 12803,
     "sha256": "01952e75ca613700fa82523955a60f974c25208627a746deb177d5a7b2fcb4e2"
-  },
-  {
-    "path": "fpga/phone_app/JDY31_CP2102_138K接线与调试.md",
-    "bytes": 8604,
-    "sha256": "06f6fd8144b1e97761cba9c4ee2e080dd14f91c40d8b62bb7ae4eee8bf12b9d2"
-  },
-  {
-    "path": "fpga/phone_app/README.md",
-    "bytes": 3610,
-    "sha256": "fe538e229b6ea135733fe764898f46d35fbb3caff0e9966088c0963a3ca45b76"
   },
   {
     "path": "fpga/phone_app/requirements.txt",
@@ -280,14 +295,19 @@
     "sha256": "f91cb9813de6a5b142b8f7f2dede630b5134160aedaeaf55f4d6a7e2593ca3f3"
   },
   {
-    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/entry_points.txt",
-    "bytes": 112,
-    "sha256": "f80437a159889fbaed5b90e1d0eba9f741ead2a90894c8fbf6a1a674321793d5"
-  },
-  {
     "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/METADATA",
     "bytes": 1650,
     "sha256": "42a8ab7e94ef0b7baa7e94cdac65d6b9254c608476f630120c990007bf472943"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/WHEEL",
+    "bytes": 110,
+    "sha256": "91db0dfb93890192221cdfa23b846197cd8ac92d1b0d67f8b81c0c6e435a7ebf"
+  },
+  {
+    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/entry_points.txt",
+    "bytes": 112,
+    "sha256": "f80437a159889fbaed5b90e1d0eba9f741ead2a90894c8fbf6a1a674321793d5"
   },
   {
     "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/metadata.json",
@@ -298,11 +318,6 @@
     "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/top_level.txt",
     "bytes": 7,
     "sha256": "1528df5875b0f958cf884a8e86db5b88ff85f0e1e7fa58a2c6ad7028bd9f58e0"
-  },
-  {
-    "path": "fpga/phone_app/vendor/pyserial-3.5.dist-info/WHEEL",
-    "bytes": 110,
-    "sha256": "91db0dfb93890192221cdfa23b846197cd8ac92d1b0d67f8b81c0c6e435a7ebf"
   },
   {
     "path": "fpga/phone_app/vendor/serial/__init__.py",
@@ -576,8 +591,8 @@
   },
   {
     "path": "fpga/rtl/score_ui_renderer.v",
-    "bytes": 189125,
-    "sha256": "a3197c9d99a950038dd81f85b017362077ef1f971924616c5a4677bad3e69888"
+    "bytes": 189342,
+    "sha256": "fcaf01db45229247d872a0059eeb942f067fa04100ab570e594fe0c813f1c7c8"
   },
   {
     "path": "fpga/rtl/sd_card_ctrl.v",
@@ -631,8 +646,8 @@
   },
   {
     "path": "fpga/rtl/ui_text_font.v",
-    "bytes": 189583,
-    "sha256": "99348bd6931ef7939ac94620f7ef9cdb9a381b69629b213947068c2a6444b316"
+    "bytes": 191429,
+    "sha256": "78ca2dbaaa9e5afc19976a19ad3cfa20d41465489b8de4bfcf6535cae98359e5"
   },
   {
     "path": "fpga/rtl/ui_view_state.v",
@@ -653,6 +668,11 @@
     "path": "fpga/run_all.tcl",
     "bytes": 226,
     "sha256": "5a395d1a3be20cca7bdd1bbeb64c6dc6c268b8e399046257fce0762b2f0932f4"
+  },
+  {
+    "path": "fpga/run_label_build.tcl",
+    "bytes": 507,
+    "sha256": "cde693acbfd0e147b03af35f5dede657a5631aaa100f03b625828c1b0f6e9ddb"
   },
   {
     "path": "fpga/showcase_stages.json",
@@ -820,6 +840,11 @@
     "sha256": "4620afcf77406989e877fa88507655206f92713c78dfca9074a8c6a016976c8e"
   },
   {
+    "path": "fpga/sim/tb_showcase_title.v",
+    "bytes": 6164,
+    "sha256": "9add7008fa5cd21a75b4534589cd9aa554421c8b8d882ec5052402e189b3887d"
+  },
+  {
     "path": "fpga/sim/tb_showcase_transport.v",
     "bytes": 1933,
     "sha256": "51ca5c6cfaf00b436bb07b89fb8acc82a32d3e88f717c0f4fa1612e39d53ba66"
@@ -860,19 +885,14 @@
     "sha256": "15673e9a10fddff34d2b8a0dc5a214d17c0675565631715d7421dafca75cd926"
   },
   {
-    "path": "README.md",
-    "bytes": 3843,
-    "sha256": "541fc3aacead1e3b56295480b9fa8e41b8685319a8002caf93e20513472a23c0"
-  },
-  {
-    "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 606,
-    "sha256": "02765251cd6add3fb5e30f6be8a61746ebc89c52a8e8b607c29eb75ee212f946"
-  },
-  {
     "path": "tools/run_rtl.py",
     "bytes": 2586,
     "sha256": "91815c7c7174742be54bd0a2ffecd526215863622bb92a72902f7095802d8310"
+  },
+  {
+    "path": "verification/README.md",
+    "bytes": 283,
+    "sha256": "915c0f43056357660a11d23b195339a18d397325f3754b1b9692a75a7adbc1e0"
   },
   {
     "path": "verification/browser.json",
@@ -885,14 +905,49 @@
     "sha256": "8c1e07923cbb2f94e44564f5ee680f74c57b6851a5e649b5e5b3bc36d32b93bf"
   },
   {
+    "path": "verification/free_switch_title/font_glyph_check.json",
+    "bytes": 592,
+    "sha256": "df67a3f29afeb61d06de4e7f986484f7a14d86a705c3afccf0e047d698e93ff4"
+  },
+  {
+    "path": "verification/free_switch_title/font_rom_check.log",
+    "bytes": 161,
+    "sha256": "c5bfff6e6da45ef9d30aae110f42adf355c5c2794688ea7103b5a5fb9361c1a8"
+  },
+  {
+    "path": "verification/free_switch_title/results.json",
+    "bytes": 256,
+    "sha256": "6b5579fedf6ac2e58d221d783e0bc72180d84bff0a7d52b646729316b8542c71"
+  },
+  {
+    "path": "verification/free_switch_title/tb_display_integrity.log",
+    "bytes": 1032,
+    "sha256": "8fd0d8a1703f4f8ec54d366b8800bd3cda17573dddbd38aaaba4c4ae88f9aeff"
+  },
+  {
+    "path": "verification/free_switch_title/tb_runtime_controls.log",
+    "bytes": 1198,
+    "sha256": "2671c3c44b599126b5ec89c7d0676afde550d68a0f83ef845037ca6713015bc6"
+  },
+  {
+    "path": "verification/free_switch_title/tb_showcase_title.log",
+    "bytes": 303,
+    "sha256": "86e5a045158cd77001802758ce872797f073efe2f3d97a9ed6542d53541c8f4b"
+  },
+  {
+    "path": "verification/free_switch_title/tb_showcase_transport.log",
+    "bytes": 102,
+    "sha256": "a6949f3944c0fb261903d5f22f679e077c0d658ebf4bec13dffc42e467eb7d8b"
+  },
+  {
     "path": "verification/gateway.log",
     "bytes": 2354,
     "sha256": "5c77353fd32f25efbfeabdea19917f1f8c1292b9b47627d0cab0c11e93bdda4e"
   },
   {
-    "path": "verification/README.md",
-    "bytes": 283,
-    "sha256": "915c0f43056357660a11d23b195339a18d397325f3754b1b9692a75a7adbc1e0"
+    "path": "verification/packaged_retest.json",
+    "bytes": 2275,
+    "sha256": "71d1a4920c854703b5e4fa4a41525686573d646a28bd453cb16d4edb9fe43deb"
   },
   {
     "path": "verification/rhythm.log",
@@ -1058,10 +1113,5 @@
     "path": "verification/rtl/tb_wave_scope.log",
     "bytes": 927,
     "sha256": "9347e6fe6f3ef2e4012709d7a5dc43438274ff48af7260188c3f79c8392b8a13"
-  },
-  {
-    "path": "verification/packaged_retest.json",
-    "bytes": 2275,
-    "sha256": "71d1a4920c854703b5e4fa4a41525686573d646a28bd453cb16d4edb9fe43deb"
   }
 ]
